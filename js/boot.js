@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!bootContainer) return;
 
   try {
-    // Check if boot animation was already shown in this session
     const alreadyBooted = sessionStorage.getItem('happy_ev_boot_shown');
     
     if (alreadyBooted) {
@@ -13,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Render startup animation overlay
     bootContainer.innerHTML = `
       <div id="boot-overlay" class="fixed inset-0 z-[100] bg-[#111415] flex flex-col items-center justify-center overflow-hidden transition-all duration-1000">
         <!-- Background scanlines/noise -->
@@ -22,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         <!-- Logo & Branding Container -->
         <div class="relative flex flex-col items-center px-4 text-center">
-          <div id="boot-logo-text" class="text-[#00ff41] font-bold text-4xl md:text-6xl tracking-tighter opacity-0 translate-y-4 transition-all duration-700 ease-out uppercase">
-            Happy EV World
+          <div id="boot-logo-text" class="font-bold text-4xl md:text-6xl tracking-tighter opacity-0 translate-y-4 transition-all duration-700 ease-out uppercase">
+            <span class="text-[#FFC107]">HAPPY</span> <span class="text-[#00FF88]">EV</span> <span class="text-[#FFC107]">WORLD</span>
           </div>
           <div id="boot-sub-text" class="text-white/40 font-medium text-xs md:text-sm tracking-[0.4em] mt-3 opacity-0 transition-all duration-700 delay-300 ease-out uppercase">
             Electric Mobility. Live Better.
@@ -31,13 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
           
           <!-- Technical Progress Bar -->
           <div class="w-48 h-[2px] bg-white/10 mt-8 overflow-hidden rounded-full relative">
-            <div id="boot-progress-bar" class="absolute inset-0 bg-[#00ff41] w-0 transition-all duration-[1200ms] ease-in-out"></div>
+            <div id="boot-progress-bar" class="absolute inset-0 bg-[#00FF88] w-0 transition-all duration-[1200ms] ease-in-out"></div>
           </div>
         </div>
       </div>
     `;
 
-    // Start Animation Timeline
     setTimeout(() => {
       const logo = document.getElementById('boot-logo-text');
       if (logo) {
@@ -61,7 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }, 600);
 
-    // Transition to main site after ~2.0 seconds
     setTimeout(() => {
       const overlay = document.getElementById('boot-overlay');
       if (overlay) {
@@ -77,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }, 2000);
 
-    // Emergency fail-safe cleanup after 2.6 seconds
     setTimeout(() => {
       if (bootContainer && bootContainer.parentNode) {
         bootContainer.remove();
@@ -90,4 +85,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
-

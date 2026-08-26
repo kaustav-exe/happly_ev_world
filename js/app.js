@@ -19,7 +19,7 @@ function initNavbarMotion() {
 
   navbar.classList.add('floating-navbar');
 
-  const logo = navbar.querySelector('a');
+  const logo = navbar.querySelector('a.brand-logo');
   const links = navbar.querySelectorAll('.hidden.md\\:flex a');
   const cta = navbar.querySelector('.hidden.md\\:block a');
 
@@ -107,7 +107,6 @@ function initSectionFolding() {
   const sections = document.querySelectorAll('section.section-fold');
   if (sections.length === 0) return;
 
-  // On mobile screens, disable opacity masking so content is never blank
   const isMobile = window.innerWidth < 768;
 
   const foldObserver = new IntersectionObserver((entries) => {
@@ -179,8 +178,10 @@ function initMobileMenu() {
 function highlightActiveNav() {
   const currentPath = window.location.pathname.toLowerCase();
 
-  const navLinks = document.querySelectorAll('nav a, #mobile-menu a');
+  // Exclude brand-logo and btn-primary from link underlining
+  const navLinks = document.querySelectorAll('nav .hidden.md\\:flex a, #mobile-menu .flex-col a');
   navLinks.forEach(link => {
+    if (link.classList.contains('brand-logo') || link.classList.contains('btn-primary')) return;
     const href = link.getAttribute('href');
     if (!href) return;
     const cleanHref = href.toLowerCase();
@@ -189,10 +190,8 @@ function highlightActiveNav() {
     const isExactMatch = cleanHref !== '/' && currentPath.includes(cleanHref.replace('.html', ''));
 
     if (isHome || isExactMatch) {
-      if (!link.classList.contains('btn-primary')) {
-        link.classList.add('text-primary', 'font-bold', 'border-b-2', 'border-primary', 'pb-1');
-        link.classList.remove('text-on-surface-variant');
-      }
+      link.classList.add('text-[#00ff41]', 'font-bold', 'border-b-2', 'border-[#00ff41]', 'pb-1');
+      link.classList.remove('text-on-surface-variant', 'text-white');
     }
   });
 }

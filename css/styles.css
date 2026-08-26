@@ -1,5 +1,19 @@
 /* HAPPY EV WORLD — Custom Styles, Motion System & Design Tokens */
 
+/* Brand Logo — No Underline, No Border, Never */
+a.brand-logo,
+a.brand-logo:hover,
+a.brand-logo:focus,
+a.brand-logo:active,
+a.brand-logo:visited {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  outline: none;
+}
+a.brand-logo span {
+  text-decoration: none !important;
+}
+
 :root {
   --bg-dark: #0A0A0A;
   --surface-dim: #111415;
