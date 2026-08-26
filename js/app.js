@@ -234,6 +234,13 @@ function initImageMasks() {
   const masks = document.querySelectorAll('.mask-reveal');
   if (!masks.length) return;
 
+  const isMobile = window.innerWidth < 768;
+
+  if (isMobile) {
+    masks.forEach(m => m.classList.add('mask-active'));
+    return;
+  }
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -241,7 +248,7 @@ function initImageMasks() {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.05, rootMargin: '40px 0px 40px 0px' });
+  }, { threshold: 0.01, rootMargin: '100px 0px 100px 0px' });
 
   masks.forEach(m => observer.observe(m));
 }
