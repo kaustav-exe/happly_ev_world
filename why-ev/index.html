@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Why EV | Happy EV World</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-bright": "#37393b",
+                        "on-primary": "#003907",
+                        "error": "#ffb4ab",
+                        "primary-container": "#00ff41",
+                        "on-primary-container": "#007117",
+                        "surface-container": "#1e2021",
+                        "on-background": "#ffffff",
+                        "on-surface": "#ffffff",
+                        "surface-container-high": "#282a2c",
+                        "background": "#111415",
+                        "on-surface-variant": "#b9ccb2",
+                        "surface-container-lowest": "#0c0e10",
+                        "surface": "#111415",
+                        "primary": "#ebffe2",
+                        "primary-fixed-dim": "#00e639",
+                        "outline": "#84967e",
+                        "surface-dim": "#111415",
+                        "primary-fixed": "#72ff70"
+                    },
+                    spacing: {
+                        "section-gap": "120px",
+                        "unit": "8px",
+                        "container-max": "1440px",
+                        "gutter": "32px",
+                        "margin-desktop": "80px",
+                        "margin-mobile": "24px"
+                    },
+                    fontFamily: {
+                        sans: ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="antialiased overflow-x-hidden bg-[#0A0A0A] text-white">
+
+    <!-- Floating Transparent Header / Navbar -->
+    <nav class="bg-transparent border-b border-transparent fixed top-0 w-full z-50 floating-navbar">
+        <div class="flex justify-between items-center px-6 md:px-16 py-4 w-full max-w-[1440px] mx-auto h-20">
+            <a class="font-extrabold text-xl md:text-2xl text-white tracking-tight uppercase" href="/">
+                Happy EV World
+            </a>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="text-white hover:text-primary transition-colors text-sm md:text-base" href="/">Home</a>
+                <a class="text-white hover:text-primary transition-colors text-sm md:text-base" href="/electric-scooters">Electric Scooters</a>
+                <a class="text-white font-bold border-b-2 border-primary pb-1 text-sm md:text-base" href="/why-ev">Why EV</a>
+                <a class="text-white hover:text-primary transition-colors text-sm md:text-base" href="/about">About</a>
+                <a class="text-white hover:text-primary transition-colors text-sm md:text-base" href="/contact">Contact</a>
+            </div>
+            <div class="hidden md:block">
+                <a class="btn-primary inline-flex items-center text-sm font-bold px-6 py-3 rounded hover:opacity-90 transition-all duration-300 uppercase tracking-wider" href="/contact">
+                    Book a Test Ride <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+            </div>
+            <button class="md:hidden text-white focus:outline-none" id="mobile-menu-btn" aria-label="Open Menu">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-50 bg-[#111415]/95 backdrop-blur-xl flex flex-col justify-between p-8 opacity-0 pointer-events-none translate-y-4 transition-all duration-500">
+        <div class="flex justify-between items-center">
+            <span class="font-extrabold text-xl text-white uppercase tracking-tight">Happy EV World</span>
+            <button id="mobile-menu-close" class="text-white p-2 focus:outline-none" aria-label="Close Menu">
+                <span class="material-symbols-outlined text-3xl">close</span>
+            </button>
+        </div>
+        <div class="flex flex-col gap-6 items-center my-auto text-center">
+            <a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="/">Home</a>
+            <a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="/electric-scooters">Electric Scooters</a>
+            <a class="text-2xl font-bold text-primary" href="/why-ev">Why EV</a>
+            <a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="/about">About</a>
+            <a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="/contact">Contact</a>
+            <a class="btn-primary text-base font-bold px-8 py-4 w-full max-w-xs text-center rounded mt-4 uppercase tracking-wider" href="/contact">
+                Book a Test Ride
+            </a>
+        </div>
+        <div class="text-center text-xs text-on-surface-variant">
+            Sodepur Ghola, Kolkata | +91 89618 24113
+        </div>
+    </div>
+
+    <!-- Hero Section Cinematic Container -->
+    <section class="relative w-full h-screen min-h-[700px] flex items-end pb-20 md:pb-28 px-6 md:px-16 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWJR3Ws_xGx4fYpHTFFk4Mf8PDLY7YvC4vQkxg6vE1vQGlsgRUrPx-C2AM0IB4y1u1u91I-mmp7I0pbIoBKinkGq01wcYB5mcVHl7gBRsnT-VaV5h02vohTPPpf5oRDHs-N4HrONINS0oTP465lFVWymXtJJucirRJzly3ziiCbC0bUm6kWQ73xGxdWbaNUCiqOQ4XIZXNMqCjaLwaYmBUroXAIX9w3xAbkiBtrjKwVfPZjl0-yGmp')"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/60 to-transparent"></div>
+        </div>
+        <div class="relative z-10 w-full max-w-[1440px] mx-auto reveal">
+            <div class="max-w-3xl">
+                <span class="text-xs font-bold text-[#00ff41] border border-[#00ff41]/30 inline-block px-3 py-1 rounded mb-6 tracking-widest uppercase bg-black/40">WHY ELECTRIC</span>
+                <h1 class="text-4xl md:text-7xl font-extrabold text-white mb-6 tracking-tight uppercase">A Better Way To Move</h1>
+                <p class="text-base md:text-xl text-on-surface-variant leading-relaxed">Less noise. Less everyday running cost. A smarter, cleaner way to experience your city commutes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Electric Changes The Everyday (Split-screen) -->
+    <section class="py-20 md:py-28 px-6 md:px-16 max-w-[1440px] mx-auto section-fold">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 h-[400px] md:h-[550px] bg-surface-container-high rounded relative overflow-hidden group border border-white/10 mask-reveal">
+                <img class="absolute inset-0 w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPj3mKUceRmQLV68n_zNUN1I6BjpWkCDLoRmXGWQPRsCb0cnpASJXaL3LUebbkSveWJ27PH-17LgjvKVI8z5ZKcFpfcEO4DiBUQTj8lE4GxD1i06R-68dHcy1uVhDJv_3d3aseGnZIfDIfAAJXvzspXg9Y0EjhHkpxb5y-uN0GQAW4QsojdXYGKEecGzkJVsEvTBQAyAO35D7UbXF2uXlROiRX7t7E_paLmclj725jepViT8KMFV-Y" 
+                     alt="Sleek electric scooter charging port"/>
+            </div>
+            <div class="md:col-span-5 space-y-10 reveal">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight uppercase">Electric Changes The Everyday.</h2>
+                <div class="space-y-8 border-l border-[#00ff41]/40 pl-6">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2 uppercase">Zero Emissions</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Breathe cleaner air in Kolkata. Electric drivetrains produce zero tailpipe emissions, helping build a healthier urban community.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2 uppercase">Instant Torque</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Experience immediate, seamless acceleration. The motor delivers instantaneous power for responsive overtaking and confidence.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2 uppercase">Minimal Maintenance</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">No engine oil, spark plugs, or complex mechanical gears. Enjoy a simplified ownership experience with up to 70% lower upkeep costs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Chapters -->
+    <section class="py-20 md:py-28 bg-[#111415] border-y border-white/10 px-6 md:px-16 section-fold">
+        <div class="max-w-[1440px] mx-auto space-y-24">
+            <!-- Chapter 01 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center reveal">
+                <div class="md:col-span-5 flex flex-col justify-center">
+                    <span class="text-6xl md:text-8xl font-bold text-white/10 block mb-2 font-mono">01</span>
+                    <h3 class="text-3xl md:text-5xl font-extrabold text-white mb-4 uppercase">QUIET</h3>
+                    <p class="text-base text-on-surface-variant leading-relaxed">
+                        Reclaim the peace of your commute. Without the vibration and roar of an internal combustion engine, every journey becomes a quiet, smooth experience.
+                    </p>
+                </div>
+                <div class="md:col-span-7 h-[350px] md:h-[450px] border border-white/10 rounded overflow-hidden mask-reveal">
+                    <img class="w-full h-full object-cover opacity-80" 
+                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuByQPG7mXAG41AHCu0Yvw49kYraLkp66jUU5exBj1vJpu3jIzNlMSz-E7t_g-_Cw--qcqNxPy7MkbjdC4VraP1P88mqovLadDC-tZl8-Q1NeAmqhFHI0qgCH2CmHPxhQl4x40l7UO5E3y-K9kM0iCYHnelb1ajSdNXss0zQb8pZS18okxpy9Hn7rMayltK3WGGuhlN03w7KTSqPvhn4M8kMEQ3QonUOrV-4ISIJtyv_gYHt0PHWnrU-" 
+                         alt="Quiet morning city bridge rendering"/>
+                </div>
+            </div>
+            <!-- Chapter 02 (Reversed) -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center reveal">
+                <div class="md:col-span-7 h-[350px] md:h-[450px] border border-white/10 rounded overflow-hidden md:order-1 order-2 mask-reveal">
+                    <img class="w-full h-full object-cover opacity-80" 
+                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_p0VuI8PGnfHXmYnWqroXvEONvxigwS-SfvFqAy_jjJZFREkgZWSKZ4hJ1D-G1FN_1FARQJydd33Pkbkf8LaX3YqwitcvsaRwWvWzKRD-gvjBnoeGlqb3_WVJbECg40rdpQUEgVcsU8u9FevMA7sgPfJwfbUvdy5ZMpB-KArwe8hh_clHh-eKNbb7O3PCPriM-EWv8ZZ9ORNd5L_w7LiQx_sAEGdx2XJ-QgdqYbyl7Mlov7n94vvh" 
+                         alt="Electric motor technical component"/>
+                </div>
+                <div class="md:col-span-5 flex flex-col justify-center md:order-2 order-1">
+                    <span class="text-6xl md:text-8xl font-bold text-white/10 block mb-2 font-mono">02</span>
+                    <h3 class="text-3xl md:text-5xl font-extrabold text-white mb-4 uppercase">EFFICIENT</h3>
+                    <p class="text-base text-on-surface-variant leading-relaxed">
+                        Convert electrical energy directly into kinetic motion. Electric hub motors achieve over 85% energy efficiency compared to ~20% in petrol engines.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Cost Section -->
+    <section class="py-20 md:py-28 px-6 md:px-16 max-w-[1440px] mx-auto section-fold">
+        <div class="max-w-3xl mb-16 reveal">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4 tracking-tight uppercase">Your Daily Ride Shouldn't Cost More Than It Needs To.</h2>
+            <p class="text-base md:text-lg text-on-surface-variant">Charging at home is inherently cheaper than petrol. Experience dramatic daily savings from day one.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-[#1D1D1F] p-8 border border-white/10 rounded flex flex-col justify-between reveal">
+                <p class="text-xs text-on-surface-variant uppercase tracking-wider font-bold">Average Daily Cost</p>
+                <div class="my-6">
+                    <span class="text-4xl md:text-5xl font-extrabold text-[#00ff41]">₹15</span>
+                    <span class="text-xs text-on-surface-variant block mt-1">vs ₹120 for petrol scooters</span>
+                </div>
+                <p class="text-xs text-on-surface-variant">Based on 30km daily commute charged at domestic rates.</p>
+            </div>
+            <div class="bg-[#1D1D1F] p-8 border border-white/10 rounded flex flex-col justify-between reveal">
+                <p class="text-xs text-on-surface-variant uppercase tracking-wider font-bold">Maintenance Overhead</p>
+                <div class="my-6">
+                    <span class="text-4xl md:text-5xl font-extrabold text-white">-70%</span>
+                    <span class="text-xs text-on-surface-variant block mt-1">lower periodic service costs</span>
+                </div>
+                <p class="text-xs text-on-surface-variant">No engine oil changes, spark plugs, or exhaust maintenance.</p>
+            </div>
+            <div class="bg-[#1D1D1F] p-8 border border-white/10 rounded flex flex-col justify-between reveal">
+                <p class="text-xs text-on-surface-variant uppercase tracking-wider font-bold">Lifetime Energy Economy</p>
+                <div class="my-6">
+                    <span class="text-4xl md:text-5xl font-extrabold text-[#00ff41]">₹35,000+</span>
+                    <span class="text-xs text-on-surface-variant block mt-1">estimated annual fuel savings</span>
+                </div>
+                <p class="text-xs text-on-surface-variant">Reinvest your commuting savings back into your lifestyle.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="py-16 bg-[#111415] border-t border-white/10 px-6 md:px-16 text-center">
+        <div class="max-w-2xl mx-auto reveal">
+            <h2 class="text-3xl font-extrabold text-white mb-4 uppercase">Ready to Experience Electric Mobility?</h2>
+            <p class="text-on-surface-variant mb-8 text-sm md:text-base">Visit our Sodepur showroom or schedule a personalized test ride at your convenience.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/contact" class="btn-primary text-xs font-bold px-8 py-4 rounded uppercase tracking-wider">Book Test Ride <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                <a href="/electric-scooters" class="btn-secondary text-xs font-bold px-8 py-4 rounded uppercase tracking-wider">Explore Scooters</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0c0e10] border-t border-white/10 py-16 px-6 md:px-16 text-on-surface-variant">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
+            <div class="md:col-span-4">
+                <a class="font-extrabold text-2xl text-white tracking-tight uppercase block mb-4" href="/">Happy EV World</a>
+                <p class="text-sm max-w-sm mb-6 leading-relaxed">
+                    Sodepur's premier electric mobility showroom. Bringing next-generation electric scooters and clean commuting solutions to Kolkata.
+                </p>
+                <div class="text-sm font-semibold text-white">
+                    Showroom: Sodepur Ghola, Tirthabharti Road More, Sodepur, Kolkata – 700110
+                </div>
+            </div>
+            <div class="md:col-span-2">
+                <h4 class="text-xs font-bold text-white uppercase tracking-widest mb-4">Quick Links</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="/electric-scooters" class="hover:text-primary transition-colors">Electric Scooters</a></li>
+                    <li><a href="/why-ev" class="hover:text-primary transition-colors">Why EV</a></li>
+                    <li><a href="/about" class="hover:text-primary transition-colors">About Us</a></li>
+                    <li><a href="/contact" class="hover:text-primary transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-3">
+                <h4 class="text-xs font-bold text-white uppercase tracking-widest mb-4">Contact & Support</h4>
+                <div class="space-y-3 text-sm">
+                    <p class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[#00ff41] text-base">call</span>
+                        <a href="tel:+918961824113" class="hover:text-primary font-semibold text-white">+91 89618 24113</a>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[#00ff41] text-base">location_on</span>
+                        <span>Sodepur Ghola, Kolkata</span>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[#00ff41] text-base">schedule</span>
+                        <span>Mon - Sun: 10:00 AM - 8:30 PM</span>
+                    </p>
+                </div>
+            </div>
+            <div class="md:col-span-3">
+                <h4 class="text-xs font-bold text-white uppercase tracking-widest mb-4">Book Test Ride</h4>
+                <p class="text-sm mb-4">Schedule a personalized test ride at our Sodepur showroom.</p>
+                <a href="/contact" class="btn-primary block text-center text-xs font-bold px-6 py-3 rounded uppercase tracking-wider">Book a Test Ride</a>
+            </div>
+        </div>
+        <div class="max-w-[1440px] mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs gap-4">
+            <div>
+                © 2026 Happy EV World Sodepur. All rights reserved.
+            </div>
+            <div class="text-white/40 text-xs font-medium">
+                Made by <span class="text-white font-semibold">Xaggment Technologies</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

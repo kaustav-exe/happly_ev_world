@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact Happy EV World | Sodepur, Kolkata</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" rel="stylesheet"/>
+    <link href="/css/styles.css" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-bright": "#37393b",
+                        "on-primary": "#003907",
+                        "error": "#ffb4ab",
+                        "primary-container": "#00ff41",
+                        "on-primary-container": "#007117",
+                        "surface-container": "#1e2021",
+                        "on-background": "#ffffff",
+                        "on-surface": "#ffffff",
+                        "surface-container-high": "#282a2c",
+                        "background": "#111415",
+                        "on-surface-variant": "#b9ccb2",
+                        "surface-container-lowest": "#0c0e10",
+                        "surface": "#111415",
+                        "primary": "#00ff41",
+                        "primary-fixed-dim": "#00e639",
+                        "outline": "#84967e",
+                        "surface-dim": "#111415",
+                        "primary-fixed": "#72ff70"
+                    },
+                    fontFamily: {
+                        sans: ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="antialiased overflow-x-hidden bg-[#0A0A0A] text-white">
+
+    <!-- Boot Sequence Animation Overlay -->
+    <div id="boot-sequence"></div>
+
+    <!-- Floating Transparent Header / Navbar -->
+    <nav class="bg-transparent border-b border-transparent fixed top-0 w-full z-50 floating-navbar">
+        <div class="flex justify-between items-center px-6 md:px-16 py-4 w-full max-w-[1440px] mx-auto h-20">
+            <a class="font-extrabold text-xl md:text-2xl text-white tracking-tight uppercase" href="/">
+                Happy EV World
+            </a>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="text-white hover:text-[#00ff41] transition-colors text-sm md:text-base" href="/">Home</a>
+                <a class="text-white hover:text-[#00ff41] transition-colors text-sm md:text-base" href="/electric-scooters">Electric Scooters</a>
+                <a class="text-white hover:text-[#00ff41] transition-colors text-sm md:text-base" href="/why-ev">Why EV</a>
+                <a class="text-white hover:text-[#00ff41] transition-colors text-sm md:text-base" href="/about">About</a>
+                <a class="text-white font-bold border-b-2 border-[#00ff41] pb-1 text-sm md:text-base" href="/contact">Contact</a>
+            </div>
+            <div class="hidden md:block">
+                <a class="btn-primary inline-flex items-center text-sm font-bold px-6 py-3 rounded hover:opacity-90 transition-all duration-300 uppercase tracking-wider" href="/contact">
+                    Book a Test Ride <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+            </div>
+            <button class="md:hidden text-white focus:outline-none" id="mobile-menu-btn" aria-label="Open Menu">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-50 bg-[#111415]/95 backdrop-blur-xl flex flex-col justify-between p-8 opacity-0 pointer-events-none translate-y-4 transition-all duration-500">
+        <div class="flex justify-between items-center">
+            <span class="font-extrabold text-xl text-white uppercase tracking-tight">Happy EV World</span>
+            <button id="mobile-menu-close" class="text-white p-2 focus:outline-none" aria-label="Close Menu">
+                <span class="material-symbols-outlined text-3xl">close</span>
+            </button>
+        </div>
+        <div class="flex flex-col gap-6 items-center my-auto text-center">
+            <a class="text-2xl font-bold text-white hover:text-[#00ff41] transition-colors" href="/">Home</a>
+            <a class="text-2xl font-bold text-white hover:text-[#00ff41] transition-colors" href="/electric-scooters">Electric Scooters</a>
+            <a class="text-2xl font-bold text-white hover:text-[#00ff41] transition-colors" href="/why-ev">Why EV</a>
+            <a class="text-2xl font-bold text-white hover:text-[#00ff41] transition-colors" href="/about">About</a>
+            <a class="text-2xl font-bold text-[#00ff41]" href="/contact">Contact</a>
+            <a class="btn-primary text-base font-bold px-8 py-4 w-full max-w-xs text-center rounded mt-4 uppercase tracking-wider" href="/contact">
+                Book a Test Ride
+            </a>
+        </div>
+        <div class="text-center text-xs text-on-surface-variant">
+            Sodepur Ghola, Kolkata | +91 89618 24113
+        </div>
+    </div>
+
+    <!-- Contact Hero Section -->
+    <section class="pt-32 pb-12 px-6 md:px-16 max-w-[1440px] mx-auto reveal">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+            <div class="md:col-span-8">
+                <span class="text-xs text-[#00ff41] font-bold border border-[#00ff41]/30 inline-block px-3 py-1 rounded mb-4 tracking-widest uppercase bg-black/40">GET IN TOUCH</span>
+                <h1 class="text-4xl md:text-7xl font-extrabold text-white mb-4 tracking-tight uppercase">Let's Find Your Next Ride.</h1>
+            </div>
+            <div class="md:col-span-4">
+                <p class="text-on-surface-variant text-base md:text-lg">Have a question, want to explore an EV or ready for a test ride? Visit our Sodepur showroom or send an inquiry below.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area (Form + Contact Options) -->
+    <section class="py-12 px-6 md:px-16 max-w-[1440px] mx-auto section-fold">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+            <!-- Form Side (Left) -->
+            <div class="md:col-span-7 bg-[#1D1D1F] p-8 md:p-12 rounded outline-thin relative overflow-hidden reveal">
+                <h2 class="text-2xl font-extrabold text-white mb-6 uppercase">Book Test Ride / Inquiry</h2>
+                <form id="test-ride-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-2" for="name">Name *</label>
+                            <input id="name" name="name" type="text" required placeholder="Your Full Name" class="input-underline"/>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-2" for="phone">Phone *</label>
+                            <input id="phone" name="phone" type="tel" required placeholder="+91 89618 24113" class="input-underline"/>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-2" for="interest">Interested In</label>
+                        <select id="interest" name="interest" class="input-underline bg-[#1D1D1F]">
+                            <option value="test_ride">Book a Test Ride</option>
+                            <option value="ev_scooty_01">EV SCOOTY 01</option>
+                            <option value="ev_scooty_02">EV SCOOTY 02</option>
+                            <option value="ev_scooty_03">EV SCOOTY 03</option>
+                            <option value="city_ev_01">CITY EV 01</option>
+                            <option value="general_inquiry">General Inquiry / Pricing</option>
+                        </select>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-2" for="date">Preferred Date</label>
+                            <input id="date" name="date" type="date" class="input-underline text-on-surface-variant"/>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-2" for="time">Preferred Time</label>
+                            <input id="time" name="time" type="time" class="input-underline text-on-surface-variant"/>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-2" for="message">Message (Optional)</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Tell us how we can assist your electric transition..." class="input-underline resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full md:w-auto text-xs font-bold px-8 py-4 rounded uppercase tracking-wider mt-4">
+                        SEND ENQUIRY <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </form>
+                <div id="form-feedback"></div>
+            </div>
+            <!-- Contact Options Side (Right) -->
+            <div class="md:col-span-5 flex flex-col justify-center space-y-8 reveal">
+                <a href="tel:+918961824113" class="flex items-start gap-6 group surface-graphite p-6 rounded outline-thin hover:border-[#00ff41]/50 transition-colors">
+                    <div class="w-12 h-12 flex items-center justify-center border border-white/10 rounded group-hover:border-[#00ff41]">
+                        <span class="material-symbols-outlined text-[#00ff41]">call</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-[#00ff41] transition-colors uppercase">Call Us Directly</h3>
+                        <p class="text-base text-on-surface-variant font-bold mt-1">+91 89618 24113</p>
+                        <p class="text-xs text-on-surface-variant/70 mt-1">Mon - Sun: 10:00 AM - 8:30 PM</p>
+                    </div>
+                </a>
+                <a href="https://wa.me/918961824113" target="_blank" rel="noopener" class="flex items-start gap-6 group surface-graphite p-6 rounded outline-thin hover:border-[#00ff41]/50 transition-colors">
+                    <div class="w-12 h-12 flex items-center justify-center border border-white/10 rounded group-hover:border-[#00ff41]">
+                        <span class="material-symbols-outlined text-[#00ff41]">forum</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-[#00ff41] transition-colors uppercase">WhatsApp Chat</h3>
+                        <p class="text-sm text-on-surface-variant mt-1">Connect with our Sodepur sales advisors on WhatsApp.</p>
+                    </div>
+                </a>
+                <div class="flex items-start gap-6 group surface-graphite p-6 rounded outline-thin">
+                    <div class="w-12 h-12 flex items-center justify-center border border-white/10 rounded">
+                        <span class="material-symbols-outlined text-[#00ff41]">location_on</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-1 uppercase">Showroom Address</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">
+                            Happy EV World<br/>
+                            Sodepur Ghola, Tirthabharti Road More,<br/>
+                            Sodepur, Kolkata, West Bengal – 700110
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showroom Facade Image Banner (Image 2 - Below Form & Above Footer with reduced opacity) -->
+    <section class="w-full h-[450px] md:h-[550px] relative mb-16 group overflow-hidden border-y border-white/10 mask-reveal">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105 opacity-75" 
+             style="background-image: url('/images/showroom_facade.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/40 to-transparent"></div>
+        <div class="relative h-full flex items-end pb-12 px-6 md:px-16 max-w-[1440px] mx-auto reveal">
+            <div class="max-w-xl bg-black/60 backdrop-blur-md p-6 md:p-8 rounded border border-white/10">
+                <span class="text-xs text-[#00ff41] font-bold uppercase tracking-widest block mb-2">OUR SODEPUR SHOWROOM</span>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-white mb-3 uppercase">Happy EV World Flagship</h2>
+                <p class="text-sm text-on-surface-variant leading-relaxed mb-4">
+                    Sodepur, Barasat Road, Kolkata - 700110 | Phone: 91233 81973 / 89663 39200
+                </p>
+                <div class="text-xs text-white/50 font-mono">
+                    GSTIN: 19AASFH3039A1ZF
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0c0e10] border-t border-white/10 py-16 px-6 md:px-16 text-on-surface-variant">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
+            <div class="md:col-span-4">
+                <a class="font-extrabold text-2xl text-white tracking-tight uppercase block mb-4" href="/">Happy EV World</a>
+                <p class="text-sm max-w-sm mb-6 leading-relaxed">
+                    Sodepur's premier electric mobility showroom. Bringing next-generation electric scooters and clean commuting solutions to Kolkata.
+                </p>
+                <div class="text-sm font-semibold text-white">
+                    Showroom: Sodepur Ghola, Tirthabharti Road More, Sodepur, Kolkata – 700110
+                </div>
+            </div>
+            <div class="md:col-span-2">
+                <h4 class="text-xs font-bold text-white uppercase tracking-widest mb-4">Quick Links</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="/electric-scooters" class="hover:text-primary transition-colors">Electric Scooters</a></li>
+                    <li><a href="/why-ev" class="hover:text-primary transition-colors">Why EV</a></li>
+                    <li><a href="/about" class="hover:text-primary transition-colors">About Us</a></li>
+                    <li><a href="/contact" class="hover:text-primary transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-3">
+                <h4 class="text-xs font-bold text-white uppercase tracking-widest mb-4">Contact & Support</h4>
+                <div class="space-y-3 text-sm">
+                    <p class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[#00ff41] text-base">call</span>
+                        <a href="tel:+918961824113" class="hover:text-primary font-semibold text-white">+91 89618 24113</a>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[#00ff41] text-base">location_on</span>
+                        <span>Sodepur Ghola, Kolkata</span>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[#00ff41] text-base">schedule</span>
+                        <span>Mon - Sun: 10:00 AM - 8:30 PM</span>
+                    </p>
+                </div>
+            </div>
+            <div class="md:col-span-3">
+                <h4 class="text-xs font-bold text-white uppercase tracking-widest mb-4">Book Test Ride</h4>
+                <p class="text-sm mb-4">Schedule a personalized test ride at our Sodepur showroom.</p>
+                <a href="/contact" class="btn-primary block text-center text-xs font-bold px-6 py-3 rounded uppercase tracking-wider">Book a Test Ride</a>
+            </div>
+        </div>
+        <div class="max-w-[1440px] mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs gap-4">
+            <div>
+                © 2026 Happy EV World Sodepur. All rights reserved.
+            </div>
+            <div class="text-white/40 text-xs font-medium">
+                Made by <span class="text-white font-semibold">Xaggment Technologies</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/products.js"></script>
+    <script src="/js/boot.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

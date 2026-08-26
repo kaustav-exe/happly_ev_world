@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact - Happy EV World</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#3b4b37",
+                        "on-surface-variant": "#b9ccb2",
+                        "surface-container-highest": "#333537",
+                        "surface-container-high": "#282a2c",
+                        "primary-fixed": "#72ff70",
+                        "primary-fixed-dim": "#00e639",
+                        "surface": "#111415",
+                        "on-primary-fixed": "#002203",
+                        "surface-container": "#1e2021",
+                        "on-tertiary-container": "#616063",
+                        "error-container": "#93000a",
+                        "on-background": "#e2e2e4",
+                        "on-primary-container": "#007117",
+                        "on-secondary-container": "#bab8b7",
+                        "on-tertiary-fixed-variant": "#474649",
+                        "tertiary-fixed": "#e4e2e4",
+                        "secondary-container": "#4a4949",
+                        "tertiary-fixed-dim": "#c8c6c8",
+                        "on-secondary-fixed-variant": "#474646",
+                        "on-error-container": "#ffdad6",
+                        "secondary": "#c9c6c5",
+                        "inverse-on-surface": "#2f3132",
+                        "inverse-surface": "#e2e2e4",
+                        "on-tertiary-fixed": "#1b1b1d",
+                        "tertiary": "#fbf8fb",
+                        "on-tertiary": "#303032",
+                        "background": "#111415",
+                        "surface-container-low": "#1a1c1d",
+                        "on-surface": "#e2e2e4",
+                        "surface-dim": "#111415",
+                        "tertiary-container": "#dfdcde",
+                        "primary": "#ebffe2",
+                        "on-primary-fixed-variant": "#00530e",
+                        "on-primary": "#003907",
+                        "secondary-fixed-dim": "#c9c6c5",
+                        "primary-container": "#00ff41",
+                        "surface-bright": "#37393b",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "outline": "#84967e",
+                        "surface-tint": "#00e639",
+                        "surface-container-lowest": "#0c0e10",
+                        "surface-variant": "#333537",
+                        "on-error": "#690005",
+                        "on-secondary": "#313030",
+                        "error": "#ffb4ab",
+                        "inverse-primary": "#006e16"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1440px",
+                        "gutter": "32px",
+                        "unit": "8px",
+                        "section-gap": "160px",
+                        "margin-desktop": "80px",
+                        "margin-mobile": "24px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Plus Jakarta Sans"],
+                        "display-hero-mobile": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "mono-technical": ["Plus Jakarta Sans"],
+                        "display-hero": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "100%", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "display-hero-mobile": ["64px", { "lineHeight": "110%", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["20px", { "lineHeight": "160%", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "130%", "fontWeight": "600" }],
+                        "mono-technical": ["14px", { "lineHeight": "140%", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "display-hero": ["120px", { "lineHeight": "110%", "letterSpacing": "-0.04em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["40px", { "lineHeight": "120%", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "160%", "fontWeight": "400" }],
+                        "headline-lg": ["64px", { "lineHeight": "120%", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #0A0A0A;
+            color: #e2e2e4;
+        }
+        .form-input {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #1D1D1F;
+            color: #e2e2e4;
+            padding: 12px 0;
+            width: 100%;
+            transition: border-color 0.3s ease;
+        }
+        .form-input:focus {
+            outline: none;
+            border-bottom-color: #00FF41;
+            box-shadow: none;
+        }
+        .form-input::placeholder {
+            color: #b9ccb2;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md bg-[#0A0A0A] text-on-background selection:bg-primary-container selection:text-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-white/10 hidden md:block">
+<div class="flex justify-between items-center px-margin-desktop py-unit w-full max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-on-background tracking-tight" href="/">
+                Happy EV World
+            </a>
+<div class="flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80 transition-all duration-300 font-body-md text-body-md" href="/">Home</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80 transition-all duration-300 font-body-md text-body-md" href="/electric-scooters">Electric Scooters</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80 transition-all duration-300 font-body-md text-body-md" href="/why-ev">Why EV</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80 transition-all duration-300 font-body-md text-body-md" href="/about">About</a>
+<a class="text-[#00ff41] font-bold border-b-2 border-[#00ff41] pb-1 hover:opacity-80 transition-all duration-300 font-body-md text-body-md" href="/contact">Contact</a>
+</div>
+<a class="bg-primary-container text-background px-6 py-3 font-body-md text-body-md font-medium hover:bg-primary-fixed-dim transition-colors rounded-none inline-block" href="/contact">
+                Book a Test Ride
+            </a>
+</div>
+</nav>
+<!-- Mobile TopNav placeholder -->
+<nav class="md:hidden fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-white/10 flex justify-between items-center px-margin-mobile py-4">
+<a class="font-headline-md text-headline-md font-bold text-on-background tracking-tight text-xl" href="/">
+            Happy EV World
+        </a>
+<button class="text-on-background"><span class="material-symbols-outlined">menu</span></button>
+</nav>
+<main class="flex-grow pt-[100px] md:pt-[120px]">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mt-12 md:mt-24 mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-end">
+<div class="md:col-span-8">
+<div class="font-label-caps text-label-caps text-on-surface-variant mb-6 uppercase border border-white/10 px-3 py-1 inline-block">GET IN TOUCH</div>
+<h1 class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-on-background mb-8">
+                        Let's Find Your<br/>Next Ride.
+                    </h1>
+</div>
+<div class="md:col-span-4 md:pb-8">
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Have a question, want to explore an EV or ready for a test ride? We're here to help.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Main Content Area (Form + Contact Options) -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-gutter">
+<!-- Form Side (Left) -->
+<div class="md:col-span-7 bg-[#1D1D1F] p-8 md:p-12 relative overflow-hidden group">
+<div class="absolute inset-0 border border-white/10 pointer-events-none"></div>
+<form action="#" class="space-y-10 relative z-10" method="POST">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div>
+<label class="font-mono-technical text-mono-technical text-on-surface-variant block mb-2" for="name">Name</label>
+<input class="form-input font-body-md text-body-md" id="name" name="name" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="font-mono-technical text-mono-technical text-on-surface-variant block mb-2" for="phone">Phone</label>
+<input class="form-input font-body-md text-body-md" id="phone" name="phone" placeholder="+91 98765 43210" type="tel"/>
+</div>
+</div>
+<div>
+<label class="font-mono-technical text-mono-technical text-on-surface-variant block mb-2" for="interest">Interested In</label>
+<select class="form-input font-body-md text-body-md bg-transparent appearance-none" id="interest" name="interest">
+<option class="bg-[#1D1D1F]" value="">Select an option...</option>
+<option class="bg-[#1D1D1F]" value="test_ride">Test Ride</option>
+<option class="bg-[#1D1D1F]" value="purchase">Purchase Inquiry</option>
+<option class="bg-[#1D1D1F]" value="support">Service / Support</option>
+<option class="bg-[#1D1D1F]" value="other">Other</option>
+</select>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div>
+<label class="font-mono-technical text-mono-technical text-on-surface-variant block mb-2" for="date">Preferred Date (Optional)</label>
+<input class="form-input font-body-md text-body-md text-on-surface-variant" id="date" name="date" type="date"/>
+</div>
+<div>
+<label class="font-mono-technical text-mono-technical text-on-surface-variant block mb-2" for="time">Preferred Time (Optional)</label>
+<input class="form-input font-body-md text-body-md text-on-surface-variant" id="time" name="time" type="time"/>
+</div>
+</div>
+<div>
+<label class="font-mono-technical text-mono-technical text-on-surface-variant block mb-2" for="message">Message</label>
+<textarea class="form-input font-body-md text-body-md resize-none" id="message" name="message" placeholder="How can we assist you?" rows="4"></textarea>
+</div>
+<button class="bg-primary-container text-background px-8 py-4 font-label-caps text-label-caps uppercase hover:bg-primary-fixed-dim transition-colors mt-8 w-full md:w-auto" type="submit">
+                            Send Enquiry
+                        </button>
+</form>
+</div>
+<!-- Contact Options Side (Right) -->
+<div class="md:col-span-5 flex flex-col justify-center space-y-12">
+<div class="flex items-start gap-6 group cursor-pointer">
+<div class="w-12 h-12 flex items-center justify-center border border-white/10 group-hover:border-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary-container" data-icon="call">call</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2 group-hover:text-primary-container transition-colors">Call Us</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">+91 98765 43210</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group cursor-pointer">
+<div class="w-12 h-12 flex items-center justify-center border border-white/10 group-hover:border-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary-container" data-icon="forum">forum</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2 group-hover:text-primary-container transition-colors">WhatsApp</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Chat with our sales team instantly.</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group cursor-pointer">
+<div class="w-12 h-12 flex items-center justify-center border border-white/10 group-hover:border-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary-container" data-icon="electric_scooter">electric_scooter</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2 group-hover:text-primary-container transition-colors">Test Ride</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Experience the thrill firsthand.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Block (Cinematic) -->
+<section class="w-full h-[600px] relative mb-section-gap group overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" data-alt="A striking high-contrast, moody architectural photograph of a modern EV showroom facade at dusk. The building features sleek glass panels, minimal concrete, and subtle neon green lighting accents (#00FF41) cutting through deep blacks (#0A0A0A) and graphite shadows (#1D1D1F). The scene is cinematic, emphasizing high-end automotive editorial style and quiet luxury." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA5ySFtLdNDxrfulzlIlmH-34yCaTmXvNVbqhlIX5amei-kzy3gnU8qtSrc-jhB5K99FIMKkwJDg_x8hJOueGYPBsfbB2k8cIqWAJjEZLOrXD2Nm7mr6WCORWFv3T6mlpv8rrnpFb4-_rf-_Lz8iojed02Q92pwfHVAvHVjbeuDtM3Rs8dnbgwqxGHOu-B-FLZ1wGujfmfB0NePVfQZEWC8d7-dotWT5HTOQh3MevOWm4eOZUgk4NOq')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+<div class="relative h-full flex items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="max-w-md">
+<div class="font-label-caps text-label-caps text-primary-container mb-4 uppercase">Showroom</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-background mb-6">Visit Happy EV World</h2>
+<div class="space-y-6 font-body-md text-body-md text-on-surface-variant mb-10">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-background mt-1" data-icon="location_on">location_on</span>
+<p>123 Electric Avenue, Tech Park Phase 2<br/>Sodepur, Kolkata 700114</p>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-background mt-1" data-icon="schedule">schedule</span>
+<p>Monday - Saturday: 10:00 AM - 8:00 PM<br/>Sunday: 11:00 AM - 6:00 PM</p>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 border border-white/20 text-on-background px-6 py-3 font-label-caps text-label-caps uppercase hover:bg-white hover:text-background transition-colors" href="#">
+<span>Get Directions</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-section-gap border-t border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="md:col-span-4">
+<div class="font-headline-md text-headline-md text-on-surface mb-6">
+                    Happy EV World
+                </div>
+<p class="font-body-md text-body-md text-primary mb-2">© 2024 Happy EV World. All rights reserved.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Made by Xaggment Technologies</p>
+</div>
+<div class="md:col-span-8 flex flex-wrap gap-8 justify-start md:justify-end">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Sodepur, Kolkata</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Cookie Policy</a>
+</div>
+</div>
+</footer>
+</body></html>

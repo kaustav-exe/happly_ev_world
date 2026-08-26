@@ -1,0 +1,373 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About - Happy EV World</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#3b4b37",
+                      "on-surface-variant": "#b9ccb2",
+                      "surface-container-highest": "#333537",
+                      "surface-container-high": "#282a2c",
+                      "primary-fixed": "#72ff70",
+                      "primary-fixed-dim": "#00e639",
+                      "surface": "#111415",
+                      "on-primary-fixed": "#002203",
+                      "surface-container": "#1e2021",
+                      "on-tertiary-container": "#616063",
+                      "error-container": "#93000a",
+                      "on-background": "#e2e2e4",
+                      "on-primary-container": "#007117",
+                      "on-secondary-container": "#bab8b7",
+                      "on-tertiary-fixed-variant": "#474649",
+                      "tertiary-fixed": "#e4e2e4",
+                      "secondary-container": "#4a4949",
+                      "tertiary-fixed-dim": "#c8c6c8",
+                      "on-secondary-fixed-variant": "#474646",
+                      "on-error-container": "#ffdad6",
+                      "secondary": "#c9c6c5",
+                      "inverse-on-surface": "#2f3132",
+                      "inverse-surface": "#e2e2e4",
+                      "on-tertiary-fixed": "#1b1b1d",
+                      "tertiary": "#fbf8fb",
+                      "on-tertiary": "#303032",
+                      "background": "#111415",
+                      "surface-container-low": "#1a1c1d",
+                      "on-surface": "#e2e2e4",
+                      "surface-dim": "#111415",
+                      "tertiary-container": "#dfdcde",
+                      "primary": "#ebffe2",
+                      "on-primary-fixed-variant": "#00530e",
+                      "on-primary": "#003907",
+                      "secondary-fixed-dim": "#c9c6c5",
+                      "primary-container": "#00ff41",
+                      "surface-bright": "#37393b",
+                      "secondary-fixed": "#e5e2e1",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "outline": "#84967e",
+                      "surface-tint": "#00e639",
+                      "surface-container-lowest": "#0c0e10",
+                      "surface-variant": "#333537",
+                      "on-error": "#690005",
+                      "on-secondary": "#313030",
+                      "error": "#ffb4ab",
+                      "inverse-primary": "#006e16"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-max": "1440px",
+                      "gutter": "32px",
+                      "unit": "8px",
+                      "section-gap": "160px",
+                      "margin-desktop": "80px",
+                      "margin-mobile": "24px"
+              },
+              "fontFamily": {
+                      "label-caps": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "display-hero-mobile": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "mono-technical": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "display-hero": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "100%",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-hero-mobile": [
+                              "64px",
+                              {
+                                      "lineHeight": "110%",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "160%",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "130%",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "mono-technical": [
+                              "14px",
+                              {
+                                      "lineHeight": "140%",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-hero": [
+                              "120px",
+                              {
+                                      "lineHeight": "110%",
+                                      "letterSpacing": "-0.04em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "120%",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "160%",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "120%",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: #0A0A0A;
+            color: #e2e2e4;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-sans selection:bg-primary-container selection:text-background">
+<!-- TopNavBar -->
+<header class="bg-background/90 backdrop-blur-md font-body-md text-body-md fixed top-0 w-full z-50 border-b border-white/10">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit w-full max-w-container-max mx-auto relative z-20">
+<a class="font-headline-md text-headline-md font-bold text-on-background tracking-tight" href="/">Happy EV World</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80 transition-all duration-300" href="/">Home</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80 transition-all duration-300" href="/scooters">Electric Scooters</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80 transition-all duration-300" href="/why-ev">Why EV</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:opacity-80 transition-all duration-300" href="/about">About</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80 transition-all duration-300" href="/contact">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary-container text-background font-body-md text-body-md px-6 py-3 rounded-none hover:bg-primary-fixed-dim transition-colors hidden md:block">
+                Book a Test Ride
+            </button>
+<button class="md:hidden text-on-background p-2" id="mobile-menu-btn">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Dropdown Menu -->
+<div class="hidden md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-xl border-b border-white/10 flex flex-col pt-2 pb-6 px-margin-mobile gap-2 shadow-2xl z-10 transition-all" id="mobile-menu">
+<a class="text-on-surface-variant hover:text-on-surface py-3 border-b border-white/5 transition-colors block" href="{{DATA:SCREEN:SCREEN_25}}">Home</a>
+<a class="text-on-surface-variant hover:text-on-surface py-3 border-b border-white/5 transition-colors block" href="{{DATA:SCREEN:SCREEN_7}}">Electric Scooters</a>
+<a class="text-on-surface-variant hover:text-on-surface py-3 border-b border-white/5 transition-colors block" href="{{DATA:SCREEN:SCREEN_19}}">Why EV</a>
+<a class="text-primary font-bold py-3 border-b border-white/5 block" href="{{DATA:SCREEN:SCREEN_20}}">About</a>
+<a class="text-on-surface-variant hover:text-on-surface py-3 border-b border-white/5 transition-colors block" href="{{DATA:SCREEN:SCREEN_21}}">Contact</a>
+<a class="bg-primary-container text-background font-body-md text-body-md px-6 py-3 rounded-none hover:bg-primary-fixed-dim transition-colors mt-4 w-full block text-center" href="{{DATA:SCREEN:SCREEN_21}}">Book a Test Ride</a>
+</div>
+</header>
+<main class="flex-grow pt-32">
+<!-- Hero Section -->
+<section class="min-h-[819px] flex items-center relative overflow-hidden px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter w-full relative z-10 py-24 md:py-0">
+<div class="md:col-span-8 lg:col-span-6 flex flex-col justify-center reveal active">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-6 inline-block border border-on-surface-variant/30 px-3 py-1 w-max">ABOUT HAPPY EV WORLD</span>
+<h1 class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-on-surface mb-8">
+                        Electric Mobility,<br>Closer To Home.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                        A premium electric vehicle destination in Sodepur, Kolkata.
+                    </p>
+</div>
+</div>
+<div class="absolute inset-0 md:inset-y-0 md:right-0 w-full md:w-2/3 lg:w-1/2 opacity-30 md:opacity-100 z-0 mask-image:linear-gradient(to_bottom,transparent,black) md:mask-image:linear-gradient(to_right,transparent,black)">
+<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuClEoPl0R7Sg5FjXsDiQ3UpI54my6luKHNYrTgQL_FQnVteFTllVphgmPAwC1mo-8miAsj5nlPYhMbOxkroKTOm-_bAe9qBFYxGfvNTTFDKQcJIkukFjctHVIt6AZqCpVNRLAJ9r19UejjAXAkuiu8oym4X3YKUTKlP36WXSzrlVVAdAc47jGOvaNbEV0LzCVnWFLcNH7ETsXUhLdJeXN4OcqFUxIow8OvNZHoOjZywo75VNlcsaT58')"></div>
+</div></section>
+<!-- Our Story -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap reveal active"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-6 md:col-start-7 mb-12 md:mb-0">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-8">
+                        Built For The Way<br>Our City Moves.
+                    </h2>
+<div class="space-y-6 text-on-surface-variant font-body-md text-body-md">
+<p class="">
+                            Navigating Kolkata demands a different kind of mobility. We saw a gap between the promise of electric vehicles and the reality of experiencing them locally. Happy EV World was established to bridge that gap.
+                        </p>
+<p class="">
+                            We aren't just selling scooters; we are curating a transition to cleaner, smarter urban transport right here in Sodepur. Our showroom is designed to be a transparent, pressure-free environment where you can explore the technology at your own pace.
+                        </p>
+</div>
+</div>
+<div class="md:col-span-5">
+<div class="h-[400px] md:h-[600px] w-full bg-[#1D1D1F] p-0 relative overflow-hidden">
+<img alt="Riding in Kolkata" class="object-cover w-full h-full absolute inset-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5mwBBbcWBh_YRfntR3Xbyu9Xu69T3EVzIk3bPyAAkGZdOdyipNDDDElH0GWPw5IL3NFwElASx-ULxwCYfo-dmBlXC9ruHcYZcvDw0VtIgNoB0sVHNQgmqDsO0bsTjdPzuY1u1wxIhTijTBt-yjFxc83R2VSCHy2MAOyZY4ydm_dDDBXCsFTbHta9aUCb6dFr6NE3SH0NfHjePONS-dEmNzeULIEe2xv6-FMp_8LqaaUQf5fjmX1of">
+</div>
+</div>
+</div></section><section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap reveal active">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-6">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-8">Visit Our Showroom</h2>
+<div class="space-y-8">
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block mb-2">LOCATION</span>
+<p class="font-body-lg text-body-lg text-on-surface">123 BT Road, Sodepur,<br>Kolkata, West Bengal 700110</p>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block mb-2">HOURS</span>
+<p class="font-body-md text-body-md text-on-surface">Monday – Saturday: 10:00 AM – 8:00 PM<br>Sunday: 11:00 AM – 6:00 PM</p>
+</div>
+<a class="inline-block w-full md:w-max bg-primary text-on-primary font-bold px-8 py-4 text-center transition-all hover:opacity-90" href="#">
+                        GET DIRECTIONS
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Showroom Experience -->
+<section class="mb-section-gap reveal active">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-16">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">
+                    Come See.<br>Come Explore.<br>Come Ride.
+                </h2>
+</div>
+<div class="w-full overflow-hidden">
+<div class="flex gap-4 px-margin-mobile md:px-margin-desktop overflow-x-auto pb-8 snap-x snap-mandatory hide-scrollbar">
+<div class="min-w-[85vw] md:min-w-[60vw] h-[500px] md:h-[700px] snap-center relative shrink-0 bg-[#1D1D1F]">
+<img class="object-cover w-full h-full" data-alt="A striking exterior shot of the Happy EV World showroom in Sodepur at night. The minimalist facade features clean lines and a glowing, understated logo. Large floor-to-ceiling windows reveal the warmly lit, gallery-like interior, showcasing silhouettes of electric scooters against dark walls. The lighting is cinematic, emphasizing architectural rigor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTyjjSukHq9e4d-UuKuF02zFlVKtrpqibqi_dprZookcEovE3R6Q__-hNJzJVLaM1PwKh60YrGAx2Gb-5laIP3zSikIxqJBhYcDx7mqVRQXjd4Grnt8wByPjWCXv-GoUsXO-TN5hzovMddcQczFKlDnQJkNvIALY6OfSfZJHktvxGOzyw_5OgzsbRgHJMb6lUljPDXL8uC1rFiozE7ygreHHP5FsTxL5B1ZfJOnmCZd7DrLyhqgo7Y">
+<div class="absolute bottom-0 left-0 p-8">
+<span class="font-mono-technical text-mono-technical text-on-surface bg-background/50 px-3 py-1 backdrop-blur-sm border border-white/10">01 // EXTERIOR</span>
+</div>
+</div>
+<div class="min-w-[85vw] md:min-w-[60vw] h-[500px] md:h-[700px] snap-center relative shrink-0 bg-[#1D1D1F]">
+<img class="object-cover w-full h-full" data-alt="An expansive view of the minimalist interior of an EV showroom. The space is dominated by dark graphite tones and precise, gallery-style spotlighting focused on a few carefully placed electric scooters. The expansive negative space creates a sense of calm and technological sophistication. No clutter, just the product as the hero." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq5p-bcG4XoTq9NJVbQaScFTUQqwwcxxc4wkYd8GUqMHkpkHTeZJhjOqYjQT7I1g0FoF_5syTG_LP5HHbKW2FN7BsVVSqD_nqzeHHpu-D_Ms9YS2D9luUPV_qBJ5qME5ODrwJb2selq6Tpu5l4oUJC7_0roA6gM270M-wvvOJtC5L81xv9UNOUy9m9_rXs0xQ_Rqme4XK15DVUkIFmSlLYDZb3znF3CplEVlwfMQEXl490nkkEPxvh">
+<div class="absolute bottom-0 left-0 p-8">
+<span class="font-mono-technical text-mono-technical text-on-surface bg-background/50 px-3 py-1 backdrop-blur-sm border border-white/10">02 // INTERIOR</span>
+</div>
+</div>
+<div class="min-w-[85vw] md:min-w-[60vw] h-[500px] md:h-[700px] snap-center relative shrink-0 bg-[#1D1D1F]">
+<img class="object-cover w-full h-full" data-alt="A macro photography detail shot of an electric scooter's engineering. Focus is on a beautifully machined metal component, perhaps the suspension or wheel hub, highlighted by sharp, directional lighting against a deep black background. The image communicates engineering excellence, technical precision, and quiet luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUTwi9x5aeD_d7LvgxNCrVhVlSb8yJK-gfUknotBQi0YkDKwf78Wz2WPe5DgD1hGjOvewPGZ5zzSING8U97dXDyKVQFnsDANLOVL1aXOlUFkTycXmr1mNMddowjpNwOmcdZh9GweqzkfCiVFcXGKMN8L6n_oyOH66LDdYvhiWKn_LheKMRRGxVHbtXHY5nwW0cgD0KSVfSNDnqXfEV6dae_e7YnI3A1nMOCQhjv2SV7jUartoj-rKf">
+<div class="absolute bottom-0 left-0 p-8">
+<span class="font-mono-technical text-mono-technical text-on-surface bg-background/50 px-3 py-1 backdrop-blur-sm border border-white/10">03 // DETAILS</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest font-body-md text-body-md w-full py-section-gap border-t border-white/5 mt-auto"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-4 flex flex-col justify-between h-full mb-12 md:mb-0">
+<a class="font-headline-md text-headline-md text-on-surface mb-8 block" href="{{DATA:SCREEN:SCREEN_21}}">Happy EV World</a>
+<p class="text-on-surface-variant">© 2024 Happy EV World. All rights reserved.</p>
+</div>
+<div class="md:col-span-8 flex flex-col md:flex-row md:justify-end gap-12 md:gap-24">
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-on-surface mb-2">VISIT US</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="{{DATA:SCREEN:SCREEN_21}}">Sodepur, Kolkata</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-on-surface mb-2">LEGAL</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="/privacy">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="/terms">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="/cookies">Cookie Policy</a>
+</div>
+</div>
+</div></footer>
+<script>
+        // Simple reveal animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            const revealOnScroll = () => {
+                const windowHeight = window.innerHeight;
+                const elementVisible = 100;
+                
+                reveals.forEach((reveal) => {
+                    const elementTop = reveal.getBoundingClientRect().top;
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveal.classList.add('active');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', revealOnScroll);
+            revealOnScroll(); // Trigger on load
+
+            // Mobile menu toggle
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+
+
+</body></html>

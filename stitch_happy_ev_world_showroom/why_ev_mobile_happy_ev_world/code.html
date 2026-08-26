@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Why EV - Happy EV World</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#3b4b37",
+                      "on-surface-variant": "#b9ccb2",
+                      "surface-container-highest": "#333537",
+                      "surface-container-high": "#282a2c",
+                      "primary-fixed": "#72ff70",
+                      "primary-fixed-dim": "#00e639",
+                      "surface": "#111415",
+                      "on-primary-fixed": "#002203",
+                      "surface-container": "#1e2021",
+                      "on-tertiary-container": "#616063",
+                      "error-container": "#93000a",
+                      "on-background": "#e2e2e4",
+                      "on-primary-container": "#007117",
+                      "on-secondary-container": "#bab8b7",
+                      "on-tertiary-fixed-variant": "#474649",
+                      "tertiary-fixed": "#e4e2e4",
+                      "secondary-container": "#4a4949",
+                      "tertiary-fixed-dim": "#c8c6c8",
+                      "on-secondary-fixed-variant": "#474646",
+                      "on-error-container": "#ffdad6",
+                      "secondary": "#c9c6c5",
+                      "inverse-on-surface": "#2f3132",
+                      "inverse-surface": "#e2e2e4",
+                      "on-tertiary-fixed": "#1b1b1d",
+                      "tertiary": "#fbf8fb",
+                      "on-tertiary": "#303032",
+                      "background": "#111415",
+                      "surface-container-low": "#1a1c1d",
+                      "on-surface": "#e2e2e4",
+                      "surface-dim": "#111415",
+                      "tertiary-container": "#dfdcde",
+                      "primary": "#ebffe2",
+                      "on-primary-fixed-variant": "#00530e",
+                      "on-primary": "#003907",
+                      "secondary-fixed-dim": "#c9c6c5",
+                      "primary-container": "#00ff41",
+                      "surface-bright": "#37393b",
+                      "secondary-fixed": "#e5e2e1",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "outline": "#84967e",
+                      "surface-tint": "#00e639",
+                      "surface-container-lowest": "#0c0e10",
+                      "surface-variant": "#333537",
+                      "on-error": "#690005",
+                      "on-secondary": "#313030",
+                      "error": "#ffb4ab",
+                      "inverse-primary": "#006e16"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-max": "1440px",
+                      "gutter": "32px",
+                      "unit": "8px",
+                      "section-gap": "160px",
+                      "margin-desktop": "80px",
+                      "margin-mobile": "24px"
+              },
+              "fontFamily": {
+                      "label-caps": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "display-hero-mobile": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "mono-technical": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "display-hero": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "100%",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-hero-mobile": [
+                              "64px",
+                              {
+                                      "lineHeight": "110%",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "160%",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "130%",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "mono-technical": [
+                              "14px",
+                              {
+                                      "lineHeight": "140%",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-hero": [
+                              "120px",
+                              {
+                                      "lineHeight": "110%",
+                                      "letterSpacing": "-0.04em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "120%",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "160%",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "120%",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-white/10 hidden md:block">
+<div class="flex justify-between items-center px-margin-desktop py-unit w-full max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-on-background tracking-tight" href="/">Happy EV World</a>
+<nav class="flex gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80 transition-all duration-300" href="/">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80 transition-all duration-300" href="/electric-scooters">Electric Scooters</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1 hover:opacity-80 transition-all duration-300" href="/why-ev">Why EV</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80 transition-all duration-300" href="/about">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80 transition-all duration-300" href="/contact">Contact</a>
+</nav>
+<a class="bg-primary-container text-on-primary-fixed px-6 py-3 font-mono-technical text-mono-technical uppercase tracking-wider hover:bg-primary-fixed-dim transition-colors duration-300" href="/book-test-ride">Book a Test Ride</a>
+</div>
+</header>
+<!-- Mobile Header Placeholder (Minimal) -->
+<header class="fixed top-0 w-full z-50 md:hidden">
+<div class="bg-background/90 backdrop-blur-md border-b border-white/10 p-4 flex justify-between items-center relative z-20">
+<a class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-on-background tracking-tight text-xl" href="/">Happy EV World</a>
+<button aria-label="Menu" class="p-2 text-on-background peer"><span class="material-symbols-outlined">menu</span></button>
+<!-- Dropdown Navigation -->
+<nav class="absolute top-full left-0 w-full bg-background/80 backdrop-blur-xl border-b border-white/10 hidden peer-focus:flex hover:flex focus-within:flex flex-col shadow-2xl h-auto transition-all">
+<a class="px-6 py-4 font-body-md text-body-md text-on-surface-variant border-b border-white/5 hover:text-on-surface hover:bg-white/5 transition-colors" href="/">Home</a>
+<a class="px-6 py-4 font-body-md text-body-md text-on-surface-variant border-b border-white/5 hover:text-on-surface hover:bg-white/5 transition-colors" href="/electric-scooters">Scooters</a>
+<a class="px-6 py-4 font-body-md text-body-md text-primary font-bold border-b border-white/5 hover:bg-white/5 transition-colors" href="/why-ev">Why EV</a>
+<a class="px-6 py-4 font-body-md text-body-md text-on-surface-variant border-b border-white/5 hover:text-on-surface hover:bg-white/5 transition-colors" href="/about">About</a>
+<a class="px-6 py-4 font-body-md text-body-md text-on-surface-variant border-b border-white/5 hover:text-on-surface hover:bg-white/5 transition-colors" href="/contact">Contact</a>
+<div class="p-6">
+<a class="block text-center bg-primary-container text-on-primary-fixed px-6 py-4 font-mono-technical text-mono-technical uppercase tracking-wider hover:bg-primary-fixed-dim transition-colors duration-300" href="/book-test-ride">Book a Test Ride</a>
+</div>
+</nav>
+</div>
+</header>
+<main class="pt-24 md:pt-32">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap overflow-hidden text-center">
+<div class="absolute inset-0 z-0 opacity-40">
+<div class="bg-cover bg-center w-full h-full" data-alt="A cinematic, low-light photograph of a sleek electric scooter gliding silently through an empty, modern cityscape at night. The scene is illuminated by striking neon streaks and futuristic streetlights reflecting off the glossy black asphalt. The aesthetic is Minimalist-Technological, emphasizing quiet motion and high-end engineering in a dark mode environment with Deep Black (#0A0A0A) tones and subtle green ambient glows." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBcHoECmrlN5AqTBxR3xgaWt1VL89egsTxiBuUHbpOk1Rigt3G6mGy5occK_yQdbUjz4GQDgFUCVs0meg6gtZ4sS2BSE2GPkg023LoVAWW7rhlyF4gvIIOVxVFkCWV-uzWTwIgZO20ayWPc4HZLPelXtaCUwQPTygTH8IQRq82AqMX6wTgmaGrbzjMvOjxC9-tUtCq8FE1m0iqYtCg40n87KkcmNmGp--yT0xpAUvdhzljswNNKOMMs')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full md:w-2/3 mx-auto">
+<span class="inline-block px-3 py-1 border border-on-background/20 font-label-caps text-label-caps text-on-background mb-8 uppercase tracking-widest">Why Electric</span>
+<h1 class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-on-background mb-6">A Better Way<br/><span class="text-primary-container">To Move.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Less noise. Less everyday running cost. A smarter way to experience the city.</p>
+</div>
+</section>
+<!-- Split Screen Difference -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="h-[614px] bg-surface-container-high relative overflow-hidden">
+<img class="object-cover w-full h-full absolute inset-0 mix-blend-luminosity opacity-80 hover:opacity-100 transition-opacity duration-700" data-alt="A high-contrast, macro editorial photograph focusing on the precision-engineered electric motor hub of a premium scooter. The image features a Deep Black (#0A0A0A) background with dramatic studio lighting that highlights the metallic textures and the Electric Emerald (#00FF41) accent lines of the motor. The aesthetic is minimal, industrial, and gallery-like." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLkv-UU-7aMiVaMZ55TuauwNvAKwUzkejC2X9OBFy7mI385w76xERb5v0GwLgHH7Lwb51aR1etWfeEdYzfF2e0RTIJMiMTehdyUDiBtAxDfbJ_E5m70ZG52HG_NOJ0i5YqXHvbtWVOLG8vND6NzP1SkCyUkrttA_iiyE5s2MN1KdkHyjmz88_0ETX_YfESlFe9E0P4yQLYEYIxkyxOL6sbp9tobyoditsZoAN84Lzh_GMaVXA9u9PC"/>
+<div class="absolute inset-0 border border-white/10 pointer-events-none"></div>
+</div>
+<div class="pl-0 md:pl-12 flex flex-col justify-center mt-8">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-background mb-8">The Paradigm Shift</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">Transitioning to electric is not just about changing the fuel source; it's a fundamental upgrade to the mechanics of motion. Stripping away the combustion engine removes thousands of moving parts, resulting in an experience that is purer, more responsive, and inherently more reliable.</p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container mt-1" data-icon="bolt">bolt</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background text-xl mb-1">Instant Torque</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Immediate power delivery the moment you twist the throttle.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container mt-1" data-icon="tune">tune</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background text-xl mb-1">Zero Vibration</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">A ride so smooth it feels like gliding above the tarmac.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Benefit Stories (Bento-ish asymmetric) -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-background mb-16 text-center">Engineered for Tomorrow</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter flex-col">
+<!-- Story 1: Quiet -->
+<div class="md:col-span-7 bg-surface-container-high p-8 md:p-12 relative overflow-hidden group min-h-[400px] flex flex-col justify-end">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full opacity-30 group-hover:opacity-50 transition-opacity duration-700" data-alt="A minimalist architectural shot of a rider on an electric scooter passing by a massive, brutalist concrete wall. The scene is incredibly still, capturing the essence of 'quiet'. The lighting is stark and dramatic, casting long shadows. The color palette relies heavily on Graphite (#1D1D1F) and off-whites, maintaining the high-end automotive editorial style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDgAfu8lt8GYyCMLyUxeEHUP7TqsOE1FDfgtoySJCF7Ah4p_ql5BdLvwE8-RLbjUte2_UvrJWACRNRqW4WxyfZbi7xirRnXZ29pRlvnWcHHX7WEHe_RI0rYoxh0Q7-yq27M86TrbqiXlf7aZ6Ze7HjqakjXXIlXRn6BDe6Yn4nBFTh6mdxEr-wUhXQXpH3CxCd6inhRtaRSAdA2cTZFPDDf2M6lZcxV8kCMt8wYJd4Sgcfjv6WrM1Zf')"></div>
+</div>
+<div class="relative z-10">
+<span class="font-mono-technical text-mono-technical text-primary-container mb-4 block">01</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Silence is Luxury</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Experience the city without adding to its noise. A truly quiet ride that lets you hear the world around you.</p>
+</div>
+<div class="absolute inset-0 border border-white/10 pointer-events-none"></div>
+</div>
+<!-- Story 2: Efficient -->
+<div class="md:col-span-5 bg-surface-container-high p-8 md:p-12 relative overflow-hidden group min-h-[400px] flex flex-col justify-end">
+<div class="absolute inset-0 z-0 bg-gradient-to-br from-surface to-surface-container-lowest"></div>
+<div class="relative z-10">
+<span class="font-mono-technical text-mono-technical text-primary-container mb-4 block">02</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Maximum Efficiency</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Over 90% of battery energy goes directly to propulsion, compared to less than 30% in traditional engines.</p>
+</div>
+<div class="absolute inset-0 border border-white/10 pointer-events-none"></div>
+</div>
+<!-- Story 3: Smart -->
+<div class="md:col-span-5 bg-surface-container-high p-8 md:p-12 relative overflow-hidden group min-h-[400px] flex flex-col justify-end">
+<div class="absolute inset-0 z-0 bg-gradient-to-tr from-surface-container-lowest to-surface"></div>
+<div class="relative z-10">
+<span class="font-mono-technical text-mono-technical text-primary-container mb-4 block">03</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Intelligently Connected</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Over-the-air updates ensure your vehicle improves over time, adapting to your riding style.</p>
+</div>
+<div class="absolute inset-0 border border-white/10 pointer-events-none"></div>
+</div>
+<!-- Story 4: Cleaner -->
+<div class="md:col-span-7 bg-surface-container-high p-8 md:p-12 relative overflow-hidden group min-h-[400px] flex flex-col justify-end">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full opacity-30 group-hover:opacity-50 transition-opacity duration-700" data-alt="A sweeping, wide-angle shot of a lush green forest road seen through the sleek, modern dashboard of an electric scooter. The image symbolizes a 'cleaner' environment. The contrast between the natural greenery and the matte Graphite (#1D1D1F) of the scooter's interface creates a striking visual. The lighting is bright and atmospheric, emphasizing purity." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCok4KyGqUDR0jHS0LxzuoZ-HMGcFqy8lFCQCS3L8BaSBuPryjByQ5n8i1WSgAfUhA6T-Zxzz0kgTMKcAz02wULlo2F3MI6cbbmPmct6TV13duApC0kfh983bJkVEiAuffFA86kuzGzrx759ckIhUxn1WImSD4btkBSIJfdsgWE3Gdqf8JYnw0X0lCYLDPPtnLPvNF4xTsLQLxtZTO8cM4LS5PIH8fU6GD23lj-nPtun8M1U2PkpK67')"></div>
+</div>
+<div class="relative z-10">
+<span class="font-mono-technical text-mono-technical text-primary-container mb-4 block">04</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Zero Emissions</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">No exhaust, no smog. Just clean, forward momentum that respects the air we breathe.</p>
+</div>
+<div class="absolute inset-0 border border-white/10 pointer-events-none"></div>
+</div>
+</div>
+</section>
+<!-- Everyday Cost Section -->
+<section class="py-32 bg-surface-container border-y border-white/5 mb-section-gap">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-background mb-8 max-w-4xl mx-auto">Your Daily Ride Shouldn't Cost More Than It Needs To.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">Electricity is significantly cheaper than fossil fuels. Coupled with vastly reduced maintenance requirements—no oil changes, no spark plugs, fewer moving parts—the total cost of ownership shifts dramatically in your favor.</p>
+<div class="flex justify-center gap-8 flex-col">
+<div class="text-left border-l border-primary-container pl-6 items-center">
+<span class="font-mono-technical text-mono-technical text-on-surface-variant block mb-2 uppercase tracking-widest">Energy Cost</span>
+<span class="font-headline-md text-headline-md text-on-background block">Fractional</span>
+</div>
+<div class="text-left border-l border-primary-container pl-6 items-center">
+<span class="font-mono-technical text-mono-technical text-on-surface-variant block mb-2 uppercase tracking-widest">Maintenance</span>
+<span class="font-headline-md text-headline-md text-on-background block">Minimal</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap text-center">
+<h2 class="font-display-hero-mobile text-display-hero-mobile md:font-headline-lg md:text-headline-lg text-on-background mb-10">Ready To Go Electric?</h2>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<a class="bg-primary-container text-on-primary-fixed px-8 py-4 font-mono-technical text-mono-technical uppercase tracking-wider hover:bg-primary-fixed-dim transition-colors duration-300 inline-block" href="/book-test-ride">Book Test Ride</a>
+<a class="bg-transparent border border-on-background/20 text-on-background px-8 py-4 font-mono-technical text-mono-technical uppercase tracking-wider hover:bg-on-background hover:text-background transition-colors duration-300 inline-block" href="/electric-scooters">Explore Scooters</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop max-w-container-max mx-auto text-center">
+<div class="md:col-span-4">
+<span class="font-headline-md text-headline-md text-on-surface block mb-6">Happy EV World</span>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Happy EV World. All rights reserved.</p>
+</div>
+<div class="md:col-span-8 flex flex-wrap gap-8 md:justify-end flex-col">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Sodepur, Kolkata</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Cookie Policy</a>
+</div>
+</div>
+</footer>
+</body></html>

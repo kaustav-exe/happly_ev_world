@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Electric Scooters - Happy EV World</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#3b4b37",
+                      "on-surface-variant": "#b9ccb2",
+                      "surface-container-highest": "#333537",
+                      "surface-container-high": "#282a2c",
+                      "primary-fixed": "#72ff70",
+                      "primary-fixed-dim": "#00e639",
+                      "surface": "#111415",
+                      "on-primary-fixed": "#002203",
+                      "surface-container": "#1e2021",
+                      "on-tertiary-container": "#616063",
+                      "error-container": "#93000a",
+                      "on-background": "#e2e2e4",
+                      "on-primary-container": "#007117",
+                      "on-secondary-container": "#bab8b7",
+                      "on-tertiary-fixed-variant": "#474649",
+                      "tertiary-fixed": "#e4e2e4",
+                      "secondary-container": "#4a4949",
+                      "tertiary-fixed-dim": "#c8c6c8",
+                      "on-secondary-fixed-variant": "#474646",
+                      "on-error-container": "#ffdad6",
+                      "secondary": "#c9c6c5",
+                      "inverse-on-surface": "#2f3132",
+                      "inverse-surface": "#e2e2e4",
+                      "on-tertiary-fixed": "#1b1b1d",
+                      "tertiary": "#fbf8fb",
+                      "on-tertiary": "#303032",
+                      "background": "#111415",
+                      "surface-container-low": "#1a1c1d",
+                      "on-surface": "#e2e2e4",
+                      "surface-dim": "#111415",
+                      "tertiary-container": "#dfdcde",
+                      "primary": "#ebffe2",
+                      "on-primary-fixed-variant": "#00530e",
+                      "on-primary": "#003907",
+                      "secondary-fixed-dim": "#c9c6c5",
+                      "primary-container": "#00ff41",
+                      "surface-bright": "#37393b",
+                      "secondary-fixed": "#e5e2e1",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "outline": "#84967e",
+                      "surface-tint": "#00e639",
+                      "surface-container-lowest": "#0c0e10",
+                      "surface-variant": "#333537",
+                      "on-error": "#690005",
+                      "on-secondary": "#313030",
+                      "error": "#ffb4ab",
+                      "inverse-primary": "#006e16"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-max": "1440px",
+                      "gutter": "32px",
+                      "unit": "8px",
+                      "section-gap": "160px",
+                      "margin-desktop": "80px",
+                      "margin-mobile": "24px"
+              },
+              "fontFamily": {
+                      "label-caps": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "display-hero-mobile": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "mono-technical": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "display-hero": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "100%",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-hero-mobile": [
+                              "64px",
+                              {
+                                      "lineHeight": "110%",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "160%",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "130%",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "mono-technical": [
+                              "14px",
+                              {
+                                      "lineHeight": "140%",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-hero": [
+                              "120px",
+                              {
+                                      "lineHeight": "110%",
+                                      "letterSpacing": "-0.04em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "120%",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "160%",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "120%",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+      </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<div id="boot-animation-container"></div>
+
+<!-- TopNavBar -->
+<header class="bg-background/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-white/10 flat no shadows">
+<div class="flex justify-between items-center px-margin-desktop py-unit w-full max-w-container-max mx-auto md:flex hidden">
+<div class="font-headline-md text-headline-md font-bold text-on-background tracking-tight">Happy EV World</div>
+<nav class="flex gap-8">
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md hover:opacity-80 transition-all duration-300" href="/">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="/scooters">Electric Scooters</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md hover:opacity-80 transition-all duration-300" href="/why-ev">Why EV</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md hover:opacity-80 transition-all duration-300" href="/about">About</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md hover:opacity-80 transition-all duration-300" href="/contact">Contact</a>
+</nav>
+<button class="bg-primary-container text-background px-6 py-3 font-mono-technical text-mono-technical hover:opacity-80 transition-all duration-300">Book a Test Ride</button>
+</div>
+<!-- Mobile Nav Placeholder -->
+<div class="flex justify-between items-center px-margin-mobile py-4 md:hidden w-full">
+<div class="font-headline-md text-headline-md font-bold text-on-background tracking-tight">Happy EV World</div>
+<span class="material-symbols-outlined text-on-background cursor-pointer" data-icon="menu">menu</span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[100px]">
+<!-- Hero Section -->
+<section class="min-h-[819px] flex items-center relative overflow-hidden px-margin-desktop">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60" data-alt="A premium, sleek electric scooter positioned against a stark, high-contrast urban background. The scooter features sharp, minimalist geometric lines and an advanced digital display. Lighting is dramatic, with deep blacks and stark whites creating a gallery-like, cinematic atmosphere. Occasional reflections of neon green light bounce off the metallic surfaces. The overall aesthetic is highly technical, pristine, and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUJ7pyO7Q28UrVi7uNLzLfz5VerMqU93ev8SxUZ3FJbT5DJ3NANdZvK7Y8WbPYA4iyvmYbJ7OH7hJgF2Hii9lOZMuYclYcyI9z7s2MuHhGd7WgvYKV0jEoSA5etmQy4cYoLP8py0QHQGprxDNhIN9SSzXhaR2xjT8ntDsmRWyCPJ7N4T3gx_sOEmEnGKzCtOcsb9I8pQ9SAe0bRRgfk0MkJQDbeocevNKUjYPhqCy6ZcPvmW1hren-"/>
+</div>
+<div class="relative z-10 max-w-3xl">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-4 block uppercase tracking-widest border border-white/10 w-max px-3 py-1 bg-surface-container-highest">HAPPY EV WORLD ELECTRIC SCOOTERS</span>
+<h1 class="font-display-hero text-display-hero text-on-background mb-6">Find Your Electric.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-xl">Explore electric scooters designed for everyday city movement. Precision engineering meets minimalist design.</p>
+<div class="flex gap-4">
+<button class="bg-primary-container text-background font-mono-technical text-mono-technical px-8 py-4 hover:bg-primary-fixed-dim transition-colors">Explore Scooters</button>
+<button class="bg-transparent border border-white/20 text-on-background font-mono-technical text-mono-technical px-8 py-4 hover:bg-white hover:text-black transition-colors">Book a Test Ride</button>
+</div>
+</div>
+</section>
+<!-- Product Showcase Grid -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12">
+<!-- Product Card 1 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A top-tier flagship electric scooter photographed in a clean, minimalist studio setting. The vehicle is stark white with subtle graphite and electric emerald green accents. The lighting is soft yet highly precise, highlighting the aerodynamic curves and high-tech components. The background is a solid, deep charcoal gray to emphasize the product as the sole hero." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD4XN9DE8EU50EiogjjP0Ff9OrV7fQc29dkZ8rxAp9qGL0Djn-0wvv1iPp_t1slGQaEbZz_HxeDvSjZRY-otPokc93NrStbFlPxLZ6HLhVohKmAGDcrx6NKCTE6i3nLSePzkU-IvtmVTG219dg5jVsyl6AIg-rnVJDD4rXLuxaapsJasPUM6LkA0MLOgkHDi9h0jZQaKiDcQpkVDDsyOYu6c6_H8bXnX10R1g1lUoxJsoOh-wRIRpt"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Model X-Pro</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">The pinnacle of urban mobility. Extended range and peak performance.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 150 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 85 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 3.5 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A sleek, lightweight urban electric scooter designed for agile city commuting. The scooter has a matte black finish with highly polished chrome details and minimalistic emerald green LED indicators. The studio lighting casts stark shadows, emphasizing the slender, precise architectural lines of the stem and deck against a deep black background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANj0KumpWKWDukEup6PhosR0w4exmQRZUVTp-4UN7Tv1Iq_yTvwuX0YaLjpEHZbG-vHItTOS_78-_DDhejCgwFr21KvDA6huDz2C02kHRBOB9auEA_qUUMjXblRRITfyvioGhqAXSwCE044AdnXPcuuUpb50lLQ10nAeZcbLUb8FM9WQCIibI61UxciNGlM6NMqm1XNXb0-d37UeD6sS0rv1aG9pA15JY2y8OOeX8NwliPdQrDHV3X"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">City Glide</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Lightweight, agile, and perfect for the last mile.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 65 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 30 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 1.2 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electric scooter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMncT_GpMEFHPvICao7ZO9SUCqDF8YSAf8wEH40TZpOdnvnVWa0hK68EQp-fzeGEwuKFHwzGIo2-UD7eTwhaCHSLM3gDWhzh5HIJykPSgxrlF0kjjTYIgRKUa1WvACHK2SUKZIfsL2xa9ZbQ45SfRUofzCEKCZJDI-27KIgQ_5wjGHBMWvDX6AZtyHdVin951AAbYNIWAOVTtPpp922-ZkQDUfnGTW8GHoIDX6O31HEYGOR1QFTzSC"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Urban S</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Stylish and efficient for everyday commuting.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 80 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 45 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.0 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electric scooter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1LYExgiTjHiF6AhzlF7Ig23x9n7QpoJoVWkhDvVNR8FIRP7-TrtHSF1wSnauzSFVEH28c7gf9d5ASAOF-MyBt2ufYEp_SpKs4xZRj7hZIV2B1L15bR2rmmTCt6Fa3q9P-NlE1WlfOb1RKs1t1nHT9SBDE4jsqvLXHoMBnSbA9f3f7kY_Lz4CZGGKGy7D2Qf_R501msTiG4hrOFqAt0BTTZFDW8UcVJnqk6yNMVHWxdgLRSxCRKVS5"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Volt One</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">The essential electric experience.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 70 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 35 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 1.5 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electric scooter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvITEEWss35mQbzDFirTmr82jDtjl7n89VnTgL2Hu3IBcczFwNm2pnmpIFZj2qLPj2m6s4uRJhukJv0arjWcACPHzIX-SsIrxsR6MXeKFrLfE-HY2h3EspjcAIm1F_Ku9JjWsqKF1HRP_sqYTKQdlsP6eYOc0wSCDdP80Od_vRkyEjUjknQ-PpzYAL52zVl_G1v-NPsf9Ubsc9TrvcsRiSPW1P8A1JMHBjy2q6c0tAPH7xRPUxLG_b"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Volt X</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Enhanced power and premium features.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 100 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 55 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.5 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electric scooter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0Hs0nIari_-Zb5sYISRrgXSjYZ0h4TtS2hCugoa6RvdiN8jiSEY0hL89Yy76zWKA8WzL8JwrbpQkVKrpi65Ah-XDrQWkQfv0iq93JgGL4FTIOHR4HK68qT-l2GIo46NekDWTZMnOkgaKOs0ZqrhM-m8yh3KCShTOxfGO5M-EUB-nX1AHO4cP2TMrcMcGFJIqCCRN9Rbm47ly7dNM891dL-ZXrjTBmDtYc-MGT4nHwfhtCRDeQZCB9"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Urban Pro</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Professional grade urban mobility.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 120 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 65 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 3.0 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 7 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electric scooter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASuLGGj5aId_qaiFwbD_qA1N6v14N3wGVYp1ixe2X0RkIPK9lmRrYhMlQ-t93d5ojn26e5Og8tllD5RhZ-8MHVCsJFI0kbecl5BfF-57IX9Miri4nimZCT1exSKX9TNdZFRjuzyurOOQxsxdfQjsooVZg71Dwtfa0_obw8lwvH0sCLcVkX1JVoz2Bjg55AoCOQvGCTVXGdkZX9feFG07P66Oj3JKBRkhsoYK320gposKxSiirahvcY"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">City Max</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Maximum comfort for city riding.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 90 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 40 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.2 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 8 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electric scooter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAInp8Y0Tpwr15zvut5sb_CLseJhW35yymw_GxxeNl6_Q73TW0kcRlaBKdB2812kYDJc3poISLpTWLAB5GFtlMzbWQ7DVfu6fsxdt7eDe9zMTTnoOMgHPoD2OAvpt1C2f6T9ak3fukLzb6Qp4bpOZZlJQj5xOZcd2L-LZG0E9OuOfj7cW9XZpxTad7l9R5wXbGI6iN_WvrQRqIaTHfhVaJ97tH-K4I5UNcJtbLktWn90I62Lyf_rxGo"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Street X</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Dynamic design for the modern street.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 110 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 60 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.8 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 9 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electric scooter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7AsXCn7Qnb_orCKxHsQZkuOkz4tWQyd7ejYC7PM_Bd0xRp7DOpQlvR5SIFMN2SID5__ng-5rELmQtir78kcEGqH4yO1bGQ6vDj6vAV6XPq-Hi-Bz6evFcDG8cYN7mZTrb77TXA6fo1vsxkoWuGhbmScsXItnmrxvpBcITqFynjM3vCqhiWdF_P5JNW_DdNvuFnxcxfGzExUwK9a7jPyaBpB6RdWi8AxNJzz7h82y1EBgl2jAFh2y0"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">E-Ride</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Simple, reliable electric transportation.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 50 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 25 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 1.0 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 10 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electric scooter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu21G3xLCVm3KO8mFpvVNZXBipOSgZjHQWxyAFkXSXceFBF7QcSU_61ZLq_hUfPBTtrODQCuea0EZGllcKOnNQXk-_ovYozYB-oLFqkHEsYft63_y3qg-usGXJP19Q59AeIGSV8fUejJDWC0ymsF62XvAG7MPaA1Vzh3bw4jPeW9BN_WpTu0pFuN_S_XseydjxAxt-tVErulz9DJFmnzoCqNZuCZujzHPoP0jOxErS1PvvwxqqZSmj"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">E-Ride Pro</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Advanced features for the daily rider.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 85 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 45 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.1 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 11 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electric scooter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUifz2JbO5T0WG7q-PWDBQtIw-Z-tFpOnVCSr-kT5m_-PCu3WO19dE4icrDkcSfShDuUzGX0dYt4Kry0_xaJp7VMqW-EcZMpOptVEVxh8ZykDyP1BZID45yGXEtG6MlF5_ViT-Ln3gAa74C2mYB1sPdG8Vy7XcBDISsRhimOQ0BVDWSUuYXaKT_h12XG_tlrtdD7x5lUWSoZZIty5WU9Dhii0lVw-MGXiEGjHfZcAMCFe5dgwHir5x"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Urban Lite</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Ultra-lightweight design for easy carrying.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 45 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 20 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 0.9 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 12 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electric scooter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQO4UJESs6YElNsIBIcGsJYbRhMLPVW_XiG35Zu7MCtAiKKwoHskbwlkqrFOv0zEEWMOhsLPVZaGBKhafsQUDjdmKN-9TnSZJlZBXkFIwWJg2uKgwXrwYvWKz43aUZfnBOQINmRYfFOdxNcPYXgIDk-LH_z93oX7bCPrBVo3syeyeUeZiuNJZOoWHcQkiHxnaaAIAQV4ZZ0iDxyqxNdfT9TSk-LeY9yQVncYN60CzVMiUnKXI6zxSJ"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Urban Max</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Maximum utility and cargo capacity.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 130 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 70 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 3.2 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 13 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electric scooter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjK4_amOWWT6zCADt0msxJXhWJUbqRonEiwVHFi4s3sHvyPZ36x0Iitayqw-NYsk9zL01IY_2NIbzHW_vjOev40AIEFGVk0H-oYblfSiXbMHnilvVMsvETP8DgX_kKTo-GcrDlme2yqgNI2bby19XIMamvJ5lBybpNc-uV5SGHbbl16gop_-OppfMpu_f-JhCQ2C1D7Tx8N9HxJkunCHzeK_CujZvbPGh9J7khkfGgErbAfiHIU4eW"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Eco Ride</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Environmentally focused sustainable design.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 60 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 25 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 1.1 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 14 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electric scooter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5OhG6M-KwmTn4Xoy12PzTWqmaSBWJ1yJTWTBPknk7g6MVfO5UofBjmJP74STHS06RayiHQdqvm7OS3qo1R_4Rba5982UNjK_rXnS7CHbgdVQYKWuTgL1k1Z9BQRVz2_b6aNkUeA-EV1lmvTniDUtTw_3q5ECtFCe5J9caGx3AIuDzqvsc4Cb9MoMP78qRGcttRTpVxWSEe4qn2Nz7wkEeq6tq9dZ0rCA7xzD-njTuqgBIKGeYRuXx"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Eco Ride Plus</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Extended range with sustainable materials.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 95 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 35 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.3 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 15 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electric scooter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtQkxI2P4TbYjkZBNO71229j4HDkNxrGRNfxoqriqmuucBtRAXQXmFIYamFNWEXEqn18r5jncb0IoDtQW9CrapDdRqWhysg6hW2DUqEcGnb1uenKqFxE40eu83_33N200RlI8XHJDJe2uhqp5yVqSKoDJGcfua3GU10EycHp_sHoB8p2EDvBVvg1GFzs2FBP6Qn-v9fOp7Aua0qYn0nzhW2eNVPLt_e4weQJ59dQjb_0gOeVuRHSyl"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Metro X</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Built for the demanding metropolitan environment.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 105 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 50 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.6 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 16 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electric scooter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMvIHDQEKlirE1lDrKe53xUeyMND4e2sVWrfbnDRi3S-QIk2ZbsdCPpAXmQjrRY-MDUUZpSZzn9U-zBSJl0oIxGVbknsndgO8buhw5F-fdekN4Zgs83zKgd4Dln1fufZ2qWcBnweyKKG9Tbz2q7INXAvB9r8MxXmSfRj0VSvf1b0SEU6I6nySvAu7AnVKgOKhpqJai5iGiqaSsihyPwswk5oi9pnov9IZoqdcDSc5B8GioCYJu2yZY"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Metro Pro</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">The ultimate commuter experience.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 140 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 75 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 3.4 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 17 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electric scooter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdwp3pqUDtUB5BY8lPJQfCwwsZN5q9VgFTLypfz5qQ36kjYfB43lafYjxfv1pge1gjahLB2x_t0CqsQ6QzGhx0wVVcixj09X_J6ytvTOnfNzWzNbMvmDQHC6etHRTU0w9JzupfKs0clJH3CmiRbp6gTmmWneT0jLSev27jc4kxD9hOHt_kjJOm75QwnbDLkzftR9cioVk4ilM4T3WY6xL1g6V0Ucjt6USbq7FfsSE2Rr33iyAqLlRN"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Swift EV</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Quick, nimble, and always ready.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 75 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 35 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 1.8 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 18 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electric scooter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2oTaJ5Bi8foKmvbGPkIlia3gmC2hJbYl86sgp_WHA7DjB6gRdDrSm9_0IVJB9wvo9WF4G9qw25Jgr5RZKUjeMFOa_2N_Kjf9BcxkTxeQ0HV6BpcEDekIjoaevCdnDBWRTgrA-KIqCU9fC1G8oFnv0x-Ofc6aMEQlzXepcSVIE_MZR1dH_ZtpPRtaUBL4PuwuNMQy1Mqm6DH3WIMKN9iaK3p_A87U_XnsFaax0Y0hhWjzFVxhPk1-d"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Swift X</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">High-performance agility for the fast lane.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 115 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 55 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.9 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 19 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Volt Z" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD4XN9DE8EU50EiogjjP0Ff9OrV7fQc29dkZ8rxAp9qGL0Djn-0wvv1iPp_t1slGQaEbZz_HxeDvSjZRY-otPokc93NrStbFlPxLZ6HLhVohKmAGDcrx6NKCTE6i3nLSePzkU-IvtmVTG219dg5jVsyl6AIg-rnVJDD4rXLuxaapsJasPUM6LkA0MLOgkHDi9h0jZQaKiDcQpkVDDsyOYu6c6_H8bXnX10R1g1lUoxJsoOh-wRIRpt"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Volt Z</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Next generation power and precision.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 95 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 45 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.4 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 20 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Urban Pro Max" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANj0KumpWKWDukEup6PhosR0w4exmQRZUVTp-4UN7Tv1Iq_yTvwuX0YaLjpEHZbG-vHItTOS_78-_DDhejCgwFr21KvDA6huDz2C02kHRBOB9auEA_qUUMjXblRRITfyvioGhqAXSwCE044AdnXPcuuUpb50lLQ10nAeZcbLUb8FM9WQCIibI61UxciNGlM6NMqm1XNXb0-d37UeD6sS0rv1aG9pA15JY2y8OOeX8NwliPdQrDHV3X"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Urban Pro Max</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Ultimate urban performance and style.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 130 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 70 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 3.1 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 21 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="City Glide Ultra" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMncT_GpMEFHPvICao7ZO9SUCqDF8YSAf8wEH40TZpOdnvnVWa0hK68EQp-fzeGEwuKFHwzGIo2-UD7eTwhaCHSLM3gDWhzh5HIJykPSgxrlF0kjjTYIgRKUa1WvACHK2SUKZIfsL2xa9ZbQ45SfRUofzCEKCZJDI-27KIgQ_5wjGHBMWvDX6AZtyHdVin951AAbYNIWAOVTtPpp922-ZkQDUfnGTW8GHoIDX6O31HEYGOR1QFTzSC"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">City Glide Ultra</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Extended range for longer commutes.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 85 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 40 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.0 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 22 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Apex EV" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1LYExgiTjHiF6AhzlF7Ig23x9n7QpoJoVWkhDvVNR8FIRP7-TrtHSF1wSnauzSFVEH28c7gf9d5ASAOF-MyBt2ufYEp_SpKs4xZRj7hZIV2B1L15bR2rmmTCt6Fa3q9P-NlE1WlfOb1RKs1t1nHT9SBDE4jsqvLXHoMBnSbA9f3f7kY_Lz4CZGGKGy7D2Qf_R501msTiG4hrOFqAt0BTTZFDW8UcVJnqk6yNMVHWxdgLRSxCRKVS5"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Apex EV</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Reach the peak of electric mobility.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 160 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 90 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 3.8 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 23 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Horizon X" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvITEEWss35mQbzDFirTmr82jDtjl7n89VnTgL2Hu3IBcczFwNm2pnmpIFZj2qLPj2m6s4uRJhukJv0arjWcACPHzIX-SsIrxsR6MXeKFrLfE-HY2h3EspjcAIm1F_Ku9JjWsqKF1HRP_sqYTKQdlsP6eYOc0wSCDdP80Od_vRkyEjUjknQ-PpzYAL52zVl_G1v-NPsf9Ubsc9TrvcsRiSPW1P8A1JMHBjy2q6c0tAPH7xRPUxLG_b"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Horizon X</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Expand your boundaries with limitless range.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 140 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 75 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 3.3 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 24 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Zenith Rider" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0Hs0nIari_-Zb5sYISRrgXSjYZ0h4TtS2hCugoa6RvdiN8jiSEY0hL89Yy76zWKA8WzL8JwrbpQkVKrpi65Ah-XDrQWkQfv0iq93JgGL4FTIOHR4HK68qT-l2GIo46NekDWTZMnOkgaKOs0ZqrhM-m8yh3KCShTOxfGO5M-EUB-nX1AHO4cP2TMrcMcGFJIqCCRN9Rbm47ly7dNM891dL-ZXrjTBmDtYc-MGT4nHwfhtCRDeQZCB9"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Zenith Rider</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Elevated experience for the true enthusiast.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 125 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 80 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 3.0 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 25 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Nova Glide" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASuLGGj5aId_qaiFwbD_qA1N6v14N3wGVYp1ixe2X0RkIPK9lmRrYhMlQ-t93d5ojn26e5Og8tllD5RhZ-8MHVCsJFI0kbecl5BfF-57IX9Miri4nimZCT1exSKX9TNdZFRjuzyurOOQxsxdfQjsooVZg71Dwtfa0_obw8lwvH0sCLcVkX1JVoz2Bjg55AoCOQvGCTVXGdkZX9feFG07P66Oj3JKBRkhsoYK320gposKxSiirahvcY"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Nova Glide</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Smooth acceleration and seamless travel.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 110 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 55 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.7 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 26 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Aero Commute" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAInp8Y0Tpwr15zvut5sb_CLseJhW35yymw_GxxeNl6_Q73TW0kcRlaBKdB2812kYDJc3poISLpTWLAB5GFtlMzbWQ7DVfu6fsxdt7eDe9zMTTnoOMgHPoD2OAvpt1C2f6T9ak3fukLzb6Qp4bpOZZlJQj5xOZcd2L-LZG0E9OuOfj7cW9XZpxTad7l9R5wXbGI6iN_WvrQRqIaTHfhVaJ97tH-K4I5UNcJtbLktWn90I62Lyf_rxGo"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Aero Commute</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Aerodynamic design for efficient cruising.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 90 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 50 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.1 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 27 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Spark Lite" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7AsXCn7Qnb_orCKxHsQZkuOkz4tWQyd7ejYC7PM_Bd0xRp7DOpQlvR5SIFMN2SID5__ng-5rELmQtir78kcEGqH4yO1bGQ6vDj6vAV6XPq-Hi-Bz6evFcDG8cYN7mZTrb77TXA6fo1vsxkoWuGhbmScsXItnmrxvpBcITqFynjM3vCqhiWdF_P5JNW_DdNvuFnxcxfGzExUwK9a7jPyaBpB6RdWi8AxNJzz7h82y1EBgl2jAFh2y0"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Spark Lite</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Compact, vibrant, and ready to go.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 55 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 25 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 1.2 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 28 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Velocity X" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu21G3xLCVm3KO8mFpvVNZXBipOSgZjHQWxyAFkXSXceFBF7QcSU_61ZLq_hUfPBTtrODQCuea0EZGllcKOnNQXk-_ovYozYB-oLFqkHEsYft63_y3qg-usGXJP19Q59AeIGSV8fUejJDWC0ymsF62XvAG7MPaA1Vzh3bw4jPeW9BN_WpTu0pFuN_S_XseydjxAxt-tVErulz9DJFmnzoCqNZuCZujzHPoP0jOxErS1PvvwxqqZSmj"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Velocity X</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Speed meets sophisticated engineering.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 100 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 65 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.5 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 29 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Orion Shift" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUifz2JbO5T0WG7q-PWDBQtIw-Z-tFpOnVCSr-kT5m_-PCu3WO19dE4icrDkcSfShDuUzGX0dYt4Kry0_xaJp7VMqW-EcZMpOptVEVxh8ZykDyP1BZID45yGXEtG6MlF5_ViT-Ln3gAa74C2mYB1sPdG8Vy7XcBDISsRhimOQ0BVDWSUuYXaKT_h12XG_tlrtdD7x5lUWSoZZIty5WU9Dhii0lVw-MGXiEGjHfZcAMCFe5dgwHir5x"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Orion Shift</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Adaptable performance for changing streets.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 80 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 45 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 1.9 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 30 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Terra Glide" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQO4UJESs6YElNsIBIcGsJYbRhMLPVW_XiG35Zu7MCtAiKKwoHskbwlkqrFOv0zEEWMOhsLPVZaGBKhafsQUDjdmKN-9TnSZJlZBXkFIwWJg2uKgwXrwYvWKz43aUZfnBOQINmRYfFOdxNcPYXgIDk-LH_z93oX7bCPrBVo3syeyeUeZiuNJZOoWHcQkiHxnaaAIAQV4ZZ0iDxyqxNdfT9TSk-LeY9yQVncYN60CzVMiUnKXI6zxSJ"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Terra Glide</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Tackle uneven terrains with superior shocks.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 115 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 55 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.8 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 31 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Metro Phantom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjK4_amOWWT6zCADt0msxJXhWJUbqRonEiwVHFi4s3sHvyPZ36x0Iitayqw-NYsk9zL01IY_2NIbzHW_vjOev40AIEFGVk0H-oYblfSiXbMHnilvVMsvETP8DgX_kKTo-GcrDlme2yqgNI2bby19XIMamvJ5lBybpNc-uV5SGHbbl16gop_-OppfMpu_f-JhCQ2C1D7Tx8N9HxJkunCHzeK_CujZvbPGh9J7khkfGgErbAfiHIU4eW"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Metro Phantom</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Silent operation and stealthy aesthetics.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 90 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 45 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.2 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 32 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Quantum Run" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5OhG6M-KwmTn4Xoy12PzTWqmaSBWJ1yJTWTBPknk7g6MVfO5UofBjmJP74STHS06RayiHQdqvm7OS3qo1R_4Rba5982UNjK_rXnS7CHbgdVQYKWuTgL1k1Z9BQRVz2_b6aNkUeA-EV1lmvTniDUtTw_3q5ECtFCe5J9caGx3AIuDzqvsc4Cb9MoMP78qRGcttRTpVxWSEe4qn2Nz7wkEeq6tq9dZ0rCA7xzD-njTuqgBIKGeYRuXx"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Quantum Run</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Advanced tech for a smarter journey.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 105 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 60 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.6 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 33 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Elevate S" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtQkxI2P4TbYjkZBNO71229j4HDkNxrGRNfxoqriqmuucBtRAXQXmFIYamFNWEXEqn18r5jncb0IoDtQW9CrapDdRqWhysg6hW2DUqEcGnb1uenKqFxE40eu83_33N200RlI8XHJDJe2uhqp5yVqSKoDJGcfua3GU10EycHp_sHoB8p2EDvBVvg1GFzs2FBP6Qn-v9fOp7Aua0qYn0nzhW2eNVPLt_e4weQJ59dQjb_0gOeVuRHSyl"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Elevate S</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Taking your commute to the next level.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 75 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 35 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 1.7 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 34 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Pulse EV" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMvIHDQEKlirE1lDrKe53xUeyMND4e2sVWrfbnDRi3S-QIk2ZbsdCPpAXmQjrRY-MDUUZpSZzn9U-zBSJl0oIxGVbknsndgO8buhw5F-fdekN4Zgs83zKgd4Dln1fufZ2qWcBnweyKKG9Tbz2q7INXAvB9r8MxXmSfRj0VSvf1b0SEU6I6nySvAu7AnVKgOKhpqJai5iGiqaSsihyPwswk5oi9pnov9IZoqdcDSc5B8GioCYJu2yZY"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Pulse EV</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Feel the energy in every ride.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 65 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 30 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 1.4 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 35 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Glide Matrix" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdwp3pqUDtUB5BY8lPJQfCwwsZN5q9VgFTLypfz5qQ36kjYfB43lafYjxfv1pge1gjahLB2x_t0CqsQ6QzGhx0wVVcixj09X_J6ytvTOnfNzWzNbMvmDQHC6etHRTU0w9JzupfKs0clJH3CmiRbp6gTmmWneT0jLSev27jc4kxD9hOHt_kjJOm75QwnbDLkzftR9cioVk4ilM4T3WY6xL1g6V0Ucjt6USbq7FfsSE2Rr33iyAqLlRN"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Glide Matrix</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Engineered for smooth navigation.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 95 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 50 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.3 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 36 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Neon Rush" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2oTaJ5Bi8foKmvbGPkIlia3gmC2hJbYl86sgp_WHA7DjB6gRdDrSm9_0IVJB9wvo9WF4G9qw25Jgr5RZKUjeMFOa_2N_Kjf9BcxkTxeQ0HV6BpcEDekIjoaevCdnDBWRTgrA-KIqCU9fC1G8oFnv0x-Ofc6aMEQlzXepcSVIE_MZR1dH_ZtpPRtaUBL4PuwuNMQy1Mqm6DH3WIMKN9iaK3p_A87U_XnsFaax0Y0hhWjzFVxhPk1-d"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Neon Rush</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Bold aesthetics and thrilling speed.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 110 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 70 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.8 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 37 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Hyper City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD4XN9DE8EU50EiogjjP0Ff9OrV7fQc29dkZ8rxAp9qGL0Djn-0wvv1iPp_t1slGQaEbZz_HxeDvSjZRY-otPokc93NrStbFlPxLZ6HLhVohKmAGDcrx6NKCTE6i3nLSePzkU-IvtmVTG219dg5jVsyl6AIg-rnVJDD4rXLuxaapsJasPUM6LkA0MLOgkHDi9h0jZQaKiDcQpkVDDsyOYu6c6_H8bXnX10R1g1lUoxJsoOh-wRIRpt"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Hyper City</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Dominate the streets with superior torque.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 145 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 80 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 3.4 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 38 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Nexus Rider" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANj0KumpWKWDukEup6PhosR0w4exmQRZUVTp-4UN7Tv1Iq_yTvwuX0YaLjpEHZbG-vHItTOS_78-_DDhejCgwFr21KvDA6huDz2C02kHRBOB9auEA_qUUMjXblRRITfyvioGhqAXSwCE044AdnXPcuuUpb50lLQ10nAeZcbLUb8FM9WQCIibI61UxciNGlM6NMqm1XNXb0-d37UeD6sS0rv1aG9pA15JY2y8OOeX8NwliPdQrDHV3X"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Nexus Rider</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Connected tech for seamless mobility.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 100 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 55 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.4 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 39 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electra Z" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMncT_GpMEFHPvICao7ZO9SUCqDF8YSAf8wEH40TZpOdnvnVWa0hK68EQp-fzeGEwuKFHwzGIo2-UD7eTwhaCHSLM3gDWhzh5HIJykPSgxrlF0kjjTYIgRKUa1WvACHK2SUKZIfsL2xa9ZbQ45SfRUofzCEKCZJDI-27KIgQ_5wjGHBMWvDX6AZtyHdVin951AAbYNIWAOVTtPpp922-ZkQDUfnGTW8GHoIDX6O31HEYGOR1QFTzSC"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Electra Z</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Pure electric power and precision.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 85 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 45 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 1.9 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 40 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Urban Stealth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1LYExgiTjHiF6AhzlF7Ig23x9n7QpoJoVWkhDvVNR8FIRP7-TrtHSF1wSnauzSFVEH28c7gf9d5ASAOF-MyBt2ufYEp_SpKs4xZRj7hZIV2B1L15bR2rmmTCt6Fa3q9P-NlE1WlfOb1RKs1t1nHT9SBDE4jsqvLXHoMBnSbA9f3f7kY_Lz4CZGGKGy7D2Qf_R501msTiG4hrOFqAt0BTTZFDW8UcVJnqk6yNMVHWxdgLRSxCRKVS5"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Urban Stealth</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Minimalist design with maximum utility.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 75 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 35 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 1.5 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 41 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Eco Swift" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvITEEWss35mQbzDFirTmr82jDtjl7n89VnTgL2Hu3IBcczFwNm2pnmpIFZj2qLPj2m6s4uRJhukJv0arjWcACPHzIX-SsIrxsR6MXeKFrLfE-HY2h3EspjcAIm1F_Ku9JjWsqKF1HRP_sqYTKQdlsP6eYOc0wSCDdP80Od_vRkyEjUjknQ-PpzYAL52zVl_G1v-NPsf9Ubsc9TrvcsRiSPW1P8A1JMHBjy2q6c0tAPH7xRPUxLG_b"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Eco Swift</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Eco-friendly and nimble for the city.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 60 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 25 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 1.1 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 42 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Kinetic Pro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0Hs0nIari_-Zb5sYISRrgXSjYZ0h4TtS2hCugoa6RvdiN8jiSEY0hL89Yy76zWKA8WzL8JwrbpQkVKrpi65Ah-XDrQWkQfv0iq93JgGL4FTIOHR4HK68qT-l2GIo46NekDWTZMnOkgaKOs0ZqrhM-m8yh3KCShTOxfGO5M-EUB-nX1AHO4cP2TMrcMcGFJIqCCRN9Rbm47ly7dNM891dL-ZXrjTBmDtYc-MGT4nHwfhtCRDeQZCB9"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Kinetic Pro</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Harness energy with every stop.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 115 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 60 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 2.7 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+<!-- Product Card 43 -->
+<div class="col-span-1 bg-[#1D1D1F] flex flex-col group cursor-pointer border border-white/10 hover:border-primary-container transition-colors">
+<div class="h-[300px] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Atlas Glide" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASuLGGj5aId_qaiFwbD_qA1N6v14N3wGVYp1ixe2X0RkIPK9lmRrYhMlQ-t93d5ojn26e5Og8tllD5RhZ-8MHVCsJFI0kbecl5BfF-57IX9Miri4nimZCT1exSKX9TNdZFRjuzyurOOQxsxdfQjsooVZg71Dwtfa0_obw8lwvH0sCLcVkX1JVoz2Bjg55AoCOQvGCTVXGdkZX9feFG07P66Oj3JKBRkhsoYK320gposKxSiirahvcY"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Atlas Glide</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Heavy-duty transport for the urban explorer.</p>
+</div>
+<div class="flex justify-between border-t border-white/10 pt-4 pb-4 font-mono-technical text-mono-technical text-on-surface-variant">
+<div><span class="block text-label-caps">RANGE</span> 150 KM</div>
+<div><span class="block text-label-caps">TOP SPEED</span> 75 KM/H</div>
+<div><span class="block text-label-caps">BATTERY</span> 3.6 KWH</div>
+</div>
+<div class="flex gap-4 mt-4">
+<a class="text-primary font-mono-technical border-b border-primary hover:opacity-80 transition-opacity" href="#">View Details</a>
+<a class="bg-white/10 text-white px-4 py-2 font-mono-technical text-sm hover:bg-white/20 transition-colors ml-auto" href="#">Book Test Ride</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-section-gap border-t border-white/5 flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-4">
+<div class="font-headline-md text-headline-md text-on-surface mb-4">Happy EV World</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">© 2024 Happy EV World. All rights reserved.</p>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-70">Made by Xaggment Technologies</p>
+</div>
+<div class="col-span-1 md:col-span-8 flex justify-end gap-8 font-body-md text-body-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Sodepur, Kolkata</a>
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Cookie Policy</a>
+</div>
+</div>
+</footer>
+</body></html>
