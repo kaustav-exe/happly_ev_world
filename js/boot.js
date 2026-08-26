@@ -5,12 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!bootContainer) return;
 
   try {
-    const alreadyBooted = sessionStorage.getItem('happy_ev_boot_shown');
-    
-    if (alreadyBooted) {
-      bootContainer.remove();
-      return;
-    }
 
     bootContainer.innerHTML = `
       <div id="boot-overlay" class="fixed inset-0 z-[100] bg-[#111415] flex flex-col items-center justify-center overflow-hidden transition-all duration-1000">
@@ -68,7 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
           if (bootContainer && bootContainer.parentNode) {
             bootContainer.remove();
           }
-          try { sessionStorage.setItem('happy_ev_boot_shown', 'true'); } catch (e) {}
         }, 800);
       }
     }, 2000);

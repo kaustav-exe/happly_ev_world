@@ -3,10 +3,21 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Electric Scooters | Happy EV World Sodepur</title>
+
+    <!-- ═══ SEO ═══════════════════════════════════════════ -->
+    <title>Electric Scooters in Kolkata | Happy EV World Sodepur — 20+ Models</title>
+    <meta name="description" content="Browse 20+ electric scooter models at Happy EV World, Sodepur's premier EV showroom. Compare range, battery, and speed. Book a free test ride in Kolkata today."/>
+    <meta name="keywords" content="electric scooter Kolkata, EV scooter Sodepur, buy electric scooter Kolkata, EV showroom Kolkata, electric two wheeler Sodepur"/>
+    <meta name="robots" content="index, follow"/>
+    <link rel="canonical" href="https://happyevworld.vercel.app/electric-scooters"/>
+    <meta property="og:title" content="Electric Scooters — Happy EV World Sodepur, Kolkata"/>
+    <meta property="og:description" content="20+ electric scooter models. Compare specs, book a free test ride. Sodepur, Kolkata."/>
+    <meta property="og:url" content="https://happyevworld.vercel.app/electric-scooters"/>
+    <meta property="og:type" content="website"/>
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0" rel="stylesheet"/>
     <link href="/css/styles.css" rel="stylesheet"/>
     <script id="tailwind-config">
         tailwind.config = {
@@ -16,9 +27,7 @@
                     colors: {
                         "surface-bright": "#37393b",
                         "on-primary": "#003907",
-                        "error": "#ffb4ab",
                         "primary-container": "#00ff41",
-                        "on-primary-container": "#007117",
                         "surface-container": "#1e2021",
                         "on-background": "#ffffff",
                         "on-surface": "#ffffff",
@@ -30,12 +39,9 @@
                         "primary": "#00ff41",
                         "primary-fixed-dim": "#00e639",
                         "outline": "#84967e",
-                        "surface-dim": "#111415",
-                        "primary-fixed": "#72ff70"
+                        "surface-dim": "#111415"
                     },
-                    fontFamily: {
-                        sans: ["Plus Jakarta Sans", "sans-serif"]
-                    }
+                    fontFamily: { sans: ["Plus Jakarta Sans", "sans-serif"] }
                 }
             }
         };
@@ -43,130 +49,134 @@
 </head>
 <body class="antialiased overflow-x-hidden bg-[#0A0A0A] text-white">
 
-    <!-- Boot Sequence Animation Overlay -->
     <div id="boot-sequence"></div>
 
-    <!-- Floating Transparent Header / Navbar -->
-    <nav class="bg-transparent border-b border-transparent fixed top-0 w-full z-50 floating-navbar">
+    <!-- NAVBAR -->
+    <nav class="bg-transparent border-b border-transparent fixed top-0 w-full z-50 floating-navbar" role="navigation" aria-label="Main navigation">
         <div class="flex justify-between items-center px-6 md:px-16 py-4 w-full max-w-[1440px] mx-auto h-20">
-            <a class="font-extrabold text-xl md:text-2xl text-white tracking-tight uppercase" href="/">
-                Happy EV World
+            <a class="brand-logo font-extrabold text-xl md:text-2xl tracking-tight uppercase" href="/" aria-label="Happy EV World — Home">
+                <span class="text-[#FFC107]">HAPPY</span> <span class="text-[#00FF88]">EV</span> <span class="text-[#FFC107]">WORLD</span>
             </a>
             <div class="hidden md:flex gap-8 items-center">
-                <a class="text-white hover:text-primary transition-colors text-sm md:text-base" href="/">Home</a>
-                <a class="text-white font-bold border-b-2 border-primary pb-1 text-sm md:text-base" href="/electric-scooters">Electric Scooters</a>
-                <a class="text-white hover:text-primary transition-colors text-sm md:text-base" href="/why-ev">Why EV</a>
-                <a class="text-white hover:text-primary transition-colors text-sm md:text-base" href="/about">About</a>
-                <a class="text-white hover:text-primary transition-colors text-sm md:text-base" href="/contact">Contact</a>
+                <a class="text-white hover:text-[#00ff41] transition-colors text-sm font-medium" href="/">Home</a>
+                <a class="text-[#00ff41] font-bold text-sm" href="/electric-scooters" aria-current="page">Electric Scooters</a>
+                <a class="text-white hover:text-[#00ff41] transition-colors text-sm font-medium" href="/why-ev">Why EV</a>
+                <a class="text-white hover:text-[#00ff41] transition-colors text-sm font-medium" href="/about">About</a>
+                <a class="text-white hover:text-[#00ff41] transition-colors text-sm font-medium" href="/contact">Contact</a>
             </div>
             <div class="hidden md:block">
-                <a class="btn-primary inline-flex items-center text-sm font-bold px-6 py-3 rounded hover:opacity-90 transition-all duration-300 uppercase tracking-wider" href="/contact">
-                    Book a Test Ride <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                <a class="btn-primary text-xs font-bold px-6 py-3 rounded-none uppercase tracking-wider" href="/contact">
+                    Book a Test Ride <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
                 </a>
             </div>
-            <button class="md:hidden text-white focus:outline-none" id="mobile-menu-btn" aria-label="Open Menu">
-                <span class="material-symbols-outlined text-3xl">menu</span>
+            <button class="md:hidden text-white focus:outline-none p-2" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+                <span class="material-symbols-outlined text-3xl" aria-hidden="true">menu</span>
             </button>
         </div>
     </nav>
 
-    <!-- Mobile Drawer Menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-50 bg-[#111415]/95 backdrop-blur-xl flex flex-col justify-between p-8 opacity-0 pointer-events-none translate-y-4 transition-all duration-500">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#111415]/97 backdrop-blur-xl flex flex-col justify-between p-8 opacity-0 pointer-events-none translate-y-4 transition-all duration-500" role="dialog" aria-modal="true">
         <div class="flex justify-between items-center">
-            <span class="font-extrabold text-xl text-white uppercase tracking-tight">Happy EV World</span>
-            <button id="mobile-menu-close" class="text-white p-2 focus:outline-none" aria-label="Close Menu">
-                <span class="material-symbols-outlined text-3xl">close</span>
+            <a href="/" class="brand-logo font-extrabold text-xl uppercase tracking-tight" aria-label="Happy EV World">
+                <span class="text-[#FFC107]">HAPPY</span> <span class="text-[#00FF88]">EV</span> <span class="text-[#FFC107]">WORLD</span>
+            </a>
+            <button id="mobile-menu-close" class="text-white p-2" aria-label="Close menu">
+                <span class="material-symbols-outlined text-3xl" aria-hidden="true">close</span>
             </button>
         </div>
-        <div class="flex flex-col gap-6 items-center my-auto text-center">
-            <a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="/">Home</a>
-            <a class="text-2xl font-bold text-primary" href="/electric-scooters">Electric Scooters</a>
-            <a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="/why-ev">Why EV</a>
-            <a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="/about">About</a>
-            <a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="/contact">Contact</a>
-            <a class="btn-primary text-base font-bold px-8 py-4 w-full max-w-xs text-center rounded mt-4 uppercase tracking-wider" href="/contact">
-                Book a Test Ride
-            </a>
-        </div>
+        <nav class="flex flex-col gap-6 items-center my-auto text-center">
+            <a class="text-2xl font-bold text-white hover:text-[#00ff41] transition-colors" href="/">Home</a>
+            <a class="text-2xl font-bold text-[#00ff41]" href="/electric-scooters" aria-current="page">Electric Scooters</a>
+            <a class="text-2xl font-bold text-white hover:text-[#00ff41] transition-colors" href="/why-ev">Why EV</a>
+            <a class="text-2xl font-bold text-white hover:text-[#00ff41] transition-colors" href="/about">About</a>
+            <a class="text-2xl font-bold text-white hover:text-[#00ff41] transition-colors" href="/contact">Contact</a>
+            <a class="btn-primary text-sm font-bold px-8 py-4 w-full max-w-xs text-center rounded-none mt-4 uppercase tracking-wider" href="/contact">Book a Test Ride</a>
+        </nav>
         <div class="text-center text-xs text-on-surface-variant">
-            Sodepur Ghola, Kolkata | +91 89618 24113
+            Sodepur Ghola, Kolkata | <a href="tel:+918961824113" class="hover:text-[#00ff41]">+91 89618 24113</a>
         </div>
     </div>
 
-    <!-- Page Banner / Header -->
-    <section class="pt-32 pb-12 px-6 md:px-16 bg-[#111415] border-b border-white/10">
+    <!-- Page Header -->
+    <section class="pt-36 pb-14 px-6 md:px-16 bg-[#111415] border-b border-white/10" aria-labelledby="catalogue-heading">
         <div class="max-w-[1440px] mx-auto reveal">
-            <span class="text-xs text-[#00ff41] font-bold uppercase tracking-widest block mb-2">COMPLETE SHOWROOM RANGE</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 tracking-tight uppercase">Electric Scooters Catalogue</h1>
+            <span class="section-label block mb-3">COMPLETE SHOWROOM RANGE</span>
+            <h1 id="catalogue-heading" class="text-4xl md:text-6xl font-extrabold text-white mb-4 tracking-tight uppercase leading-tight">Electric Scooter<br class="hidden md:block"/> Catalogue</h1>
             <p class="text-on-surface-variant text-base md:text-lg max-w-3xl">
-                Explore Kolkata's premier showcase of smart, sustainable electric two-wheelers. Find the perfect range, speed, and design tailored for your everyday mobility.
+                Kolkata's widest selection of smart, sustainable electric two-wheelers — all available for test rides at our Sodepur showroom.
             </p>
         </div>
     </section>
 
-    <!-- Catalogue Grid Section (Always Visible) -->
-    <section class="py-16 px-6 md:px-16 max-w-[1440px] mx-auto">
-        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 opacity-100">
-            <!-- Rendered dynamically by js/app.js from PRODUCTS data -->
+    <!-- Products Grid -->
+    <section class="py-14 px-6 md:px-16 max-w-[1440px] mx-auto" aria-label="Electric scooter catalogue">
+        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:gap-6">
+            <!-- Rendered by js/app.js from PRODUCTS data -->
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="py-16 bg-[#111415] border-t border-white/10 px-6 md:px-16 text-center" aria-label="Book test ride CTA">
+        <div class="max-w-2xl mx-auto reveal">
+            <span class="section-label block mb-3">EXPERIENCE ELECTRIC</span>
+            <h2 class="text-2xl md:text-4xl font-extrabold text-white mb-4 uppercase tracking-tight">All Models Available for Test Ride</h2>
+            <p class="text-on-surface-variant mb-8 text-sm md:text-base">Visit our Sodepur showroom or send us a WhatsApp to schedule your personalised test ride.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/contact" class="btn-primary text-xs font-bold px-8 py-4 rounded-none uppercase tracking-wider">
+                    Book Test Ride <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+                </a>
+                <a href="https://wa.me/918961824113?text=Hi%2C%20I%20would%20like%20to%20book%20a%20test%20ride."
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-whatsapp text-xs font-bold px-8 py-4 rounded-none uppercase tracking-wider justify-center"
+                   aria-label="WhatsApp us for a test ride">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp Us
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#0c0e10] border-t border-white/10 py-16 px-6 md:px-16 text-on-surface-variant">
+    <footer class="bg-[#0c0e10] border-t border-white/10 py-16 px-6 md:px-16 text-on-surface-variant" role="contentinfo">
         <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
             <div class="md:col-span-4">
-                <a class="font-extrabold text-2xl text-white tracking-tight uppercase block mb-4" href="/">Happy EV World</a>
-                <p class="text-sm max-w-sm mb-6 leading-relaxed">
-                    Sodepur's premier electric mobility showroom. Bringing next-generation electric scooters and clean commuting solutions to Kolkata.
-                </p>
-                <div class="text-sm font-semibold text-white">
-                    Showroom: Sodepur Ghola, Tirthabharti Road More, Sodepur, Kolkata – 700110
-                </div>
+                <a class="brand-logo font-extrabold text-2xl tracking-tight uppercase block mb-4" href="/">
+                    <span class="text-[#FFC107]">HAPPY</span> <span class="text-[#00FF88]">EV</span> <span class="text-[#FFC107]">WORLD</span>
+                </a>
+                <p class="text-sm max-w-sm mb-6 leading-relaxed">Sodepur's premier electric mobility showroom. Bringing next-generation electric scooters to Kolkata.</p>
+                <div class="text-sm font-semibold text-white">Sodepur Ghola, Tirthabharti Road More, Sodepur, Kolkata – 700110</div>
             </div>
             <div class="md:col-span-2">
                 <h4 class="text-xs font-bold text-white uppercase tracking-widest mb-4">Quick Links</h4>
                 <ul class="space-y-3 text-sm">
-                    <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
-                    <li><a href="/electric-scooters" class="hover:text-primary transition-colors">Electric Scooters</a></li>
-                    <li><a href="/why-ev" class="hover:text-primary transition-colors">Why EV</a></li>
-                    <li><a href="/about" class="hover:text-primary transition-colors">About Us</a></li>
-                    <li><a href="/contact" class="hover:text-primary transition-colors">Contact</a></li>
+                    <li><a href="/" class="hover:text-[#00ff41] transition-colors">Home</a></li>
+                    <li><a href="/electric-scooters" class="hover:text-[#00ff41] transition-colors">Electric Scooters</a></li>
+                    <li><a href="/why-ev" class="hover:text-[#00ff41] transition-colors">Why EV</a></li>
+                    <li><a href="/about" class="hover:text-[#00ff41] transition-colors">About Us</a></li>
+                    <li><a href="/contact" class="hover:text-[#00ff41] transition-colors">Contact</a></li>
                 </ul>
             </div>
             <div class="md:col-span-3">
-                <h4 class="text-xs font-bold text-white uppercase tracking-widest mb-4">Contact & Support</h4>
-                <div class="space-y-3 text-sm">
-                    <p class="flex items-center gap-2">
-                        <span class="material-symbols-outlined text-[#00ff41] text-base">call</span>
-                        <a href="tel:+918961824113" class="hover:text-primary font-semibold text-white">+91 89618 24113</a>
-                    </p>
-                    <p class="flex items-center gap-2">
-                        <span class="material-symbols-outlined text-[#00ff41] text-base">location_on</span>
-                        <span>Sodepur Ghola, Kolkata</span>
-                    </p>
-                    <p class="flex items-center gap-2">
-                        <span class="material-symbols-outlined text-[#00ff41] text-base">schedule</span>
-                        <span>Mon - Sun: 10:00 AM - 8:30 PM</span>
-                    </p>
-                </div>
+                <h4 class="text-xs font-bold text-white uppercase tracking-widest mb-4">Contact &amp; Support</h4>
+                <address class="space-y-3 text-sm not-italic">
+                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-[#00ff41] text-base" aria-hidden="true">call</span><a href="tel:+918961824113" class="hover:text-[#00ff41] font-semibold text-white">+91 89618 24113</a></p>
+                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-[#00ff41] text-base" aria-hidden="true">location_on</span><span>Sodepur Ghola, Kolkata</span></p>
+                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-[#00ff41] text-base" aria-hidden="true">schedule</span><span>Mon – Sun: 10:00 AM – 8:30 PM</span></p>
+                </address>
             </div>
             <div class="md:col-span-3">
                 <h4 class="text-xs font-bold text-white uppercase tracking-widest mb-4">Book Test Ride</h4>
-                <p class="text-sm mb-4">Schedule a personalized test ride at our Sodepur showroom.</p>
-                <a href="/contact" class="btn-primary block text-center text-xs font-bold px-6 py-3 rounded uppercase tracking-wider">Book a Test Ride</a>
+                <p class="text-sm mb-4">Schedule a personalised test ride at our Sodepur showroom.</p>
+                <a href="/contact" class="btn-primary block text-center text-xs font-bold px-6 py-3 rounded-none uppercase tracking-wider">Book a Test Ride</a>
             </div>
         </div>
         <div class="max-w-[1440px] mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs gap-4">
-            <div>
-                © 2026 Happy EV World Sodepur. All rights reserved.
-            </div>
-            <div class="text-white/40 text-xs font-medium">
-                Made by <span class="text-white font-semibold">Xaggment Technologies</span>
-            </div>
+            <div>© 2026 Happy EV World Sodepur. All rights reserved.</div>
+            <div class="text-white/40 text-xs font-medium">Made by <span class="text-white font-semibold">Xaggment Technologies</span></div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="/js/products.js"></script>
     <script src="/js/boot.js"></script>
     <script src="/js/app.js"></script>
