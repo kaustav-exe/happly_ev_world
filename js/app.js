@@ -6,6 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   injectWhatsAppFAB();
   initNavbarMotion();
+  initHeroVideo();
   initHeroParallax();
   initHeroSequence();
   initSectionFolding();
@@ -154,13 +155,38 @@ function initHeroSequence() {
 }
 
 // ─────────────────────────────────────────────────────────────
+// Hero Video Background Controller & Autoplay Handler
+// ─────────────────────────────────────────────────────────────
+function initHeroVideo() {
+  const video = document.querySelector('.hero-bg-video');
+  const container = document.querySelector('.hero-bg-container');
+  if (!video || !container) return;
+
+  // Respect reduced motion
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    container.classList.add('video-failed');
+    video.pause();
+    return;
+  }
+
+  // Attempt autoplay safely
+  const playPromise = video.play();
+  if (playPromise !== undefined) {
+    playPromise.catch(() => {
+      // If autoplay is blocked by browser policy / low-power mode, fallback to static image
+      container.classList.add('video-failed');
+    });
+  }
+}
+
+// ─────────────────────────────────────────────────────────────
 // Hero Subtle Mouse Parallax
 // ─────────────────────────────────────────────────────────────
 function initHeroParallax() {
   const heroSection = document.querySelector('section.hero-section, section.relative.min-h-screen');
   if (!heroSection) return;
 
-  const heroBg = heroSection.querySelector('.hero-bg-image, .bg-cover');
+  const heroBg = heroSection.querySelector('.hero-bg-container, .hero-bg-image, .bg-cover');
   const heroContent = heroSection.querySelector('.relative.z-10');
 
   // Skip on touch devices
@@ -184,10 +210,10 @@ function initHeroParallax() {
     currentY += (mouseY - currentY) * 0.04;
 
     if (heroBg) {
-      heroBg.style.transform = `scale(1.04) translate3d(${currentX * -0.5}px, ${currentY * -0.5}px, 0)`;
+      heroBg.style.transform = `scale(1.03) translate3d(${currentX * -0.4}px, ${currentY * -0.4}px, 0)`;
     }
     if (heroContent) {
-      heroContent.style.transform = `translate3d(${currentX * 0.3}px, ${currentY * 0.3}px, 0)`;
+      heroContent.style.transform = `translate3d(${currentX * 0.25}px, ${currentY * 0.25}px, 0)`;
     }
     requestAnimationFrame(animateParallax);
   };

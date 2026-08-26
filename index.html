@@ -171,12 +171,23 @@
     ══════════════════════════════════════════════════════ -->
     <section class="hero-section relative min-h-screen w-full flex items-end pb-20 md:pb-28 px-6 md:px-16 overflow-hidden" aria-label="Hero — Move Electric. Live Better.">
 
-        <!-- Background: Full opacity, no image-level opacity reduction -->
-        <div class="absolute inset-0 z-0" aria-hidden="true">
-            <div class="hero-bg-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCY6nCUdJu3vaGT42KrqwaODdg_fyDgI6WAOF5vPEEupY6wnenjHwDwOZ2H8m9T_XMPa9a8nGLnuOMsi-Oi2FgMytOmVq5RhY1ptm1o8KMv-pTn08d-aPVCvL59mP8m1Y5MxNl6kGN1GsThSE7LgyjOk5pIlD6t6Bk5pZmtM8sJlZZf9U_O7fkGZ3DzbqUY-Df19wc0r3exjLq4dj4j_MrzIdZIBZjf4w1skwzvbwI-BO9dr0NSBMt7');"></div>
-            <!-- Bottom-heavy gradient for text readability, vehicle stays visible -->
+        <!-- Background: Responsive Video Background with Fallback -->
+        <div class="hero-bg-container absolute inset-0 z-0" aria-hidden="true">
+            <video class="hero-bg-video absolute inset-0 w-full h-full object-cover"
+                   autoplay
+                   muted
+                   loop
+                   playsinline
+                   preload="auto">
+                <source media="(min-width: 768px)" src="/images/herovideodesktop.mp4" type="video/mp4"/>
+                <source media="(max-width: 767px)" src="/images/herovideomobile.mp4" type="video/mp4"/>
+            </video>
+            
+            <!-- Static fallback background image -->
+            <div class="hero-bg-fallback hero-bg-image absolute inset-0 w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCY6nCUdJu3vaGT42KrqwaODdg_fyDgI6WAOF5vPEEupY6wnenjHwDwOZ2H8m9T_XMPa9a8nGLnuOMsi-Oi2FgMytOmVq5RhY1ptm1o8KMv-pTn08d-aPVCvL59mP8m1Y5MxNl6kGN1GsThSE7LgyjOk5pIlD6t6Bk5pZmtM8sJlZZf9U_O7fkGZ3DzbqUY-Df19wc0r3exjLq4dj4j_MrzIdZIBZjf4w1skwzvbwI-BO9dr0NSBMt7');"></div>
+
+            <!-- Gradient Overlays for text readability -->
             <div class="hero-gradient" aria-hidden="true"></div>
-            <!-- Left-side gradient for extra text safety -->
             <div class="hero-gradient-left" aria-hidden="true"></div>
         </div>
 
