@@ -1,4 +1,4 @@
-// HAPPY EV WORLD — Main Application Controller & Premium Automotive Motion System
+// HAPPY EV WORLD — Main Application Controller & Motion System
 
 document.addEventListener('DOMContentLoaded', () => {
   initNavbarMotion();
@@ -19,7 +19,6 @@ function initNavbarMotion() {
 
   navbar.classList.add('floating-navbar');
 
-  // Initial load stagger animation for navbar elements
   const logo = navbar.querySelector('a');
   const links = navbar.querySelectorAll('.hidden.md\\:flex a');
   const cta = navbar.querySelector('.hidden.md\\:block a');
@@ -54,7 +53,6 @@ function initNavbarMotion() {
     }, 600);
   }
 
-  // Scroll down compacting effect
   const handleScroll = () => {
     if (window.scrollY > 40) {
       navbar.classList.add('nav-scrolled');
@@ -75,7 +73,6 @@ function initHeroParallax() {
   const heroBg = heroSection.querySelector('.bg-cover');
   const heroContent = heroSection.querySelector('.relative.z-10');
 
-  // Disable on mobile touch devices
   if (window.matchMedia('(pointer: coarse)').matches) return;
 
   let mouseX = 0, mouseY = 0;
@@ -107,21 +104,27 @@ function initHeroParallax() {
 
 // 3D Magazine Page-Folding Section Transitions
 function initSectionFolding() {
-  const sections = document.querySelectorAll('section');
+  const sections = document.querySelectorAll('section.section-fold');
   if (sections.length === 0) return;
+
+  // On mobile screens, disable opacity masking so content is never blank
+  const isMobile = window.innerWidth < 768;
 
   const foldObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting || isMobile) {
         entry.target.classList.add('fold-active');
         entry.target.classList.remove('fold-hidden');
       }
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.01, rootMargin: '100px 0px 100px 0px' });
 
-  sections.forEach((section, index) => {
-    if (index > 0) { // Skip hero section
-      section.classList.add('section-fold', 'fold-hidden');
+  sections.forEach((section) => {
+    if (isMobile) {
+      section.classList.add('fold-active');
+      section.classList.remove('fold-hidden');
+    } else {
+      section.classList.add('fold-hidden');
       foldObserver.observe(section);
     }
   });
@@ -138,7 +141,7 @@ function initImageMasks() {
         entry.target.classList.add('mask-active');
       }
     });
-  }, { threshold: 0.2 });
+  }, { threshold: 0.05, rootMargin: '50px 0px 50px 0px' });
 
   maskImages.forEach(img => maskObserver.observe(img));
 }
@@ -201,11 +204,11 @@ function initScrollReveals() {
 
   const revealOnScroll = () => {
     const windowHeight = window.innerHeight;
-    const elementVisible = 80;
+    const elementVisible = 40;
 
     reveals.forEach((reveal) => {
       const elementTop = reveal.getBoundingClientRect().top;
-      if (elementTop < windowHeight - elementVisible) {
+      if (elementTop < windowHeight - elementVisible || window.innerWidth < 768) {
         reveal.classList.add('active');
       }
     });
@@ -277,7 +280,7 @@ function renderProducts() {
   if (!catalogueContainer || typeof PRODUCTS === 'undefined') return;
 
   catalogueContainer.innerHTML = PRODUCTS.map(product => `
-    <div class="surface-graphite outline-thin group cursor-pointer overflow-hidden flex flex-col justify-between rounded transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1">
+    <div class="surface-graphite outline-thin group cursor-pointer overflow-hidden flex flex-col justify-between rounded transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1 opacity-100">
       <div class="w-full h-[220px] md:h-[260px] relative overflow-hidden bg-surface-container-lowest">
         <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
              src="${product.image}" 
